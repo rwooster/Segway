@@ -1,0 +1,21 @@
+Actel Designer Software
+Version: 11.0.0.23
+Release: v11.0
+
+Info: The design C:/Users/rwooster/Documents/cont_servo_test/designer/impl1/cont_servo_test.adb
+      was last modified by software version 11.0.0.23.
+Opened an existing Libero design
+C:/Users/rwooster/Documents/cont_servo_test/designer/impl1/cont_servo_test.adb.
+
+The Export-map command succeeded ( 00:00:10 )
+CHECKSUM: 7226
+Wrote to the file:
+C:\Users\rwooster\Documents\cont_servo_test\designer\impl1\cont_servo_test.fdb
+
+The Export command succeeded ( 00:00:12 )
+Design saved to file
+C:/Users/rwooster/Documents/cont_servo_test/designer/impl1/cont_servo_test.adb.
+
+The Execute Script command succeeded ( 00:00:13 )
+Design closed.
+

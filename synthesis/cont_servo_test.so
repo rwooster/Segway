@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<SynplifyOutput>
+	<result>Success</result>
+	<design>cont_servo_test</design>
+	<target_edif>C:\Users\rwooster\Documents\cont_servo_test\synthesis\cont_servo_test.edn</target_edif>
+</SynplifyOutput>

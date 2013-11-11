@@ -1,0 +1,52 @@
+FlashPro
+Version: 11.0.0.23
+Release: v11.0
+
+Software Version: 11.0.0.23
+PDB file
+'C:\Users\rwooster\Documents\cont_servo_test\designer\impl1\cont_servo_test_fp\cont_servo_test.\
+pdb' has been loaded successfully.
+DESIGN : cont_servo_test;  CHECKSUM : 7226;  PDB_VERSION : 1.8
+Driver : 3.0.0 build 1
+programmer '78516' : FlashPro3
+Opened
+'C:/Users/rwooster/Documents/cont_servo_test/designer/impl1/cont_servo_test_fp/cont_servo_test.\
+pro'
+The 'open_project' command succeeded.
+The 'set_programming_file' command succeeded.
+The 'set_device_type' command succeeded.
+The 'set_device_package' command succeeded.
+Info: Adding Flash Memory data from file
+      C:\Users\rwooster\Documents\cont_servo_test\component\work\cont_servo_test_MSS\MSS_ENVM_0\
+      \MSS_ENVM_0.efc.
+Info: Adding FPGA Array data from file
+      C:\Users\rwooster\Documents\cont_servo_test\designer\impl1\cont_servo_test.fdb.
+PDB file
+'C:\Users\rwooster\Documents\cont_servo_test\designer\impl1\cont_servo_test_fp\cont_servo_test.\
+pdb' has been loaded successfully.
+DESIGN : cont_servo_test;  CHECKSUM : 7226;  PDB_VERSION : 1.8
+The 'update_programming_file' command succeeded.
+The 'set_programming_action' command succeeded.
+programmer '78516' : Scan Chain...
+Warning: programmer '78516' : Vpump has been selected on programmer AND an externally provided
+         Vpump has also been detected. Using externally provided Vpump voltage source.
+programmer '78516' : Scan Chain PASSED.
+programmer '78516' : Executing action PROGRAM
+programmer '78516' : EXPORT FSN[48] = 0114ab288c38
+programmer '78516' : Erase ...
+programmer '78516' : Completed erase
+programmer '78516' : EXPORT CHECKSUM: [16] = 7226
+programmer '78516' : Programming FPGA Array
+programmer '78516' : Verifying FPGA Array
+programmer '78516' :         Verifying FPGA Array -- pass
+programmer '78516' : Program System Init and Boot Clients...
+programmer '78516' : Verify System Init and Boot Clients...
+programmer '78516' : Finished: Mon Nov 11 16:28:51 2013 (Elapsed time 00:00:39)
+programmer '78516' : Executing action PROGRAM PASSED.
+
+                        o - o - o - o - o - o
+
+The 'run_selected_actions' command succeeded.
+Project saved.
+The 'save_project' command succeeded.
+Project closed.
