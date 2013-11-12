@@ -1,0 +1,54 @@
+#include "drivers/mss_i2c/mss_i2c.h"
+
+#define IMU_ADDRESS_READ 0b11010001
+#define IMU_ADDRESS_WRITE 0b11010000
+
+#define XGYRO_OUT_LOWER 0x44
+#define XGYRO_OUT_UPPER 0x43
+#define YGYRO_OUT_LOWER 0x44
+#define YGYRO_OUT_UPPER 0x43
+#define ZGYRO_OUT_LOWER 0x44
+#define ZGYRO_OUT_UPPER 0x43
+
+#define XACCL_OUT_LOWER 0x3C
+#define XACCL_OUT_UPPER 0x3B
+#define YACCL_OUT_LOWER 0x3E
+#define YACCL_OUT_UPPER 0x3D
+#define ZACCL_OUT_LOWER 0x40
+#define ZACCL_OUT_UPPER 0x3F
+
+/*
+ * sets up our imu configuration. This consists of:
+ *     -setting sleep mode off
+ */
+void imu_init();
+
+
+/*
+ * Read accelerometer x value
+ */
+uint16_t imu_accel_x();
+
+
+/*
+ * Read accelerometer y value
+ */
+uint16_t imu_accel_y();
+
+
+/*
+ * Read accelerometer z value
+ */
+uint16_t imu_accel_z();
+
+
+/*
+ * writes a byte to the specified IMU register
+ */
+void imu_write(uint8_t reg, uint8_t data);
+
+
+/*
+ * reads a byte from the specified IMU register
+ */
+uint8_t imu_read(uint8_t reg);

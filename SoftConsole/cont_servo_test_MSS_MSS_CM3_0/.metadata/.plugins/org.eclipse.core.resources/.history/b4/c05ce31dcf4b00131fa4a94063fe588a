@@ -1,0 +1,58 @@
+#include "imu.h"
+
+void imu_init()
+{
+	imu_write(0x6B, 0x00);
+}
+
+uint16_t imu_accel_x()
+{
+	uint8_t receive_lower = imu_read(X_OUT_LOWER);
+	uint8_t receive_upper = imu_read(X_OUT_UPPER);
+
+	return (receive_lower + (receive_upper<<8));
+}
+
+void imu_write(uint8_t reg, uint8_t data)
+{
+	uint8_t transmit[2];
+
+	transmit[0] = reg;
+	transmit[1] = data;
+
+	MSS_I2C_write
+	(
+		&g_mss_i2c1,
+		IMU_ADDRESS_WRITE,
+		transmit,
+		sizeof(transmit),
+		MSS_I2C_RELEASE_BUS
+	);
+	MSS_I2C_wait_complete(&g_mss_i2c1);
+}
+
+uint8_t imu_read(uint8_t reg)
+{
+	uint8_t data;
+
+	MSS_I2C_write
+	(
+		&g_mss_i2c1,
+		IMU_ADDRESS_WRITE,
+		&reg,
+		sizeof(reg),
+		MSS_I2C_RELEASE_BUS
+	);
+
+	MSS_I2C_wait_complete(&g_mss_i2c1);
+
+	MSS_I2C_read
+	(
+			&g_mss_i2c1,
+			IMU_ADDRESS_READ,
+			&data,
+			sizeof(data),
+			MSS_I2C_RELEASE_BUS
+	 );
+	MSS_I2C_wait_complete(&g_mss_i2c1);
+}
