@@ -1,0 +1,102 @@
+#include "imu.h"
+
+#define X_ACCL_OFFSET 485
+
+void imu_init()
+{
+	imu_write(0x6B, 0x00);
+}
+
+int16_t imu_accl_x()
+{
+	uint8_t receive_lower = imu_read(XACCL_OUT_LOWER);
+	uint8_t receive_upper = imu_read(XACCL_OUT_UPPER);
+
+	return (receive_lower + (receive_upper<<8));
+}
+
+int16_t imu_accl_y()
+{
+	uint8_t receive_lower = imu_read(YACCL_OUT_LOWER);
+	uint8_t receive_upper = imu_read(YACCL_OUT_UPPER);
+
+	return (receive_lower + (receive_upper<<8));
+}
+
+int16_t imu_accl_z()
+{
+	uint8_t receive_lower = imu_read(ZACCL_OUT_LOWER);
+	uint8_t receive_upper = imu_read(ZACCL_OUT_UPPER);
+
+	return (receive_lower + (receive_upper<<8));
+}
+
+uint16_t imu_gyro_x()
+{
+	uint8_t receive_lower = imu_read(XGYRO_OUT_LOWER);
+	uint8_t receive_upper = imu_read(XGYRO_OUT_UPPER);
+
+	return (receive_lower + (receive_upper<<8));
+}
+
+uint16_t imu_gyro_y()
+{
+	uint8_t receive_lower = imu_read(YGYRO_OUT_LOWER);
+	uint8_t receive_upper = imu_read(YGYRO_OUT_UPPER);
+
+	return (receive_lower + (receive_upper<<8));
+}
+
+uint16_t imu_gyro_z()
+{
+	uint8_t receive_lower = imu_read(ZGYRO_OUT_LOWER);
+	uint8_t receive_upper = imu_read(ZGYRO_OUT_UPPER);
+
+	return (receive_lower + (receive_upper<<8));
+}
+
+void imu_write(uint8_t reg, uint8_t data)
+{
+	uint8_t transmit[2];
+
+	transmit[0] = reg;
+	transmit[1] = data;
+
+	MSS_I2C_write
+	(
+		&g_mss_i2c1,
+		IMU_ADDRESS_WRITE,
+		transmit,
+		sizeof(transmit),
+		MSS_I2C_RELEASE_BUS
+	);
+	MSS_I2C_wait_complete(&g_mss_i2c1);
+}
+
+uint8_t imu_read(uint8_t reg)
+{
+	uint8_t data;
+
+	MSS_I2C_write
+	(
+		&g_mss_i2c1,
+		IMU_ADDRESS_WRITE,
+		&reg,
+		sizeof(reg),
+		MSS_I2C_RELEASE_BUS
+	);
+
+	MSS_I2C_wait_complete(&g_mss_i2c1);
+
+	MSS_I2C_read
+	(
+			&g_mss_i2c1,
+			IMU_ADDRESS_READ,
+			&data,
+			sizeof(data),
+			MSS_I2C_RELEASE_BUS
+	 );
+	MSS_I2C_wait_complete(&g_mss_i2c1);
+
+	return data;
+}

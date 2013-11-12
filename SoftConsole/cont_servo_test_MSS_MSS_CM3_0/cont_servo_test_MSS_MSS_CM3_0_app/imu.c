@@ -1,5 +1,10 @@
 #include "imu.h"
 
+#define X_ACCL_OFFSET 485
+#define X_GYRO_OFFSET 475
+
+#define Y_ACCL_OFFSET -650
+
 void imu_init()
 {
 	imu_write(0x6B, 0x00);
@@ -10,7 +15,7 @@ int16_t imu_accl_x()
 	uint8_t receive_lower = imu_read(XACCL_OUT_LOWER);
 	uint8_t receive_upper = imu_read(XACCL_OUT_UPPER);
 
-	return (receive_lower + (receive_upper<<8));
+	return ((receive_lower + (receive_upper<<8)) - X_ACCL_OFFSET);
 }
 
 int16_t imu_accl_y()
@@ -18,7 +23,7 @@ int16_t imu_accl_y()
 	uint8_t receive_lower = imu_read(YACCL_OUT_LOWER);
 	uint8_t receive_upper = imu_read(YACCL_OUT_UPPER);
 
-	return (receive_lower + (receive_upper<<8));
+	return ((receive_lower + (receive_upper<<8)) - Y_ACCL_OFFSET);
 }
 
 int16_t imu_accl_z()
@@ -34,7 +39,7 @@ uint16_t imu_gyro_x()
 	uint8_t receive_lower = imu_read(XGYRO_OUT_LOWER);
 	uint8_t receive_upper = imu_read(XGYRO_OUT_UPPER);
 
-	return (receive_lower + (receive_upper<<8));
+	return ((receive_lower + (receive_upper<<8)) - X_GYRO_OFFSET);
 }
 
 uint16_t imu_gyro_y()

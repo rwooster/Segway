@@ -17,6 +17,8 @@
 #define ZACCL_OUT_LOWER 0x40
 #define ZACCL_OUT_UPPER 0x3F
 
+#define WHOAMI 0x75
+
 /*
  * sets up our imu configuration. This consists of:
  *     -setting sleep mode off
