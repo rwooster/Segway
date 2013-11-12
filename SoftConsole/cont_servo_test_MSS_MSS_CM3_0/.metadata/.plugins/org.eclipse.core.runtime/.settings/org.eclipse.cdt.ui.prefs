@@ -1,5 +1,14 @@
-#Mon Nov 11 15:33:35 EST 2013
-spelling_locale_initialized=true
-useAnnotationsPrefPage=true
-eclipse.preferences.version=1
+#Tue Nov 12 14:36:31 EST 2013
 useQuickDiffPrefPage=true
+closeBrackets=false
+useAnnotationsPrefPage=true
+sourceHoverBackgroundColor=255,255,225
+closeAngularBrackets=false
+formatter_settings_version=1
+formatter_profile=Microsemi Default
+spelling_locale_initialized=true
+eclipse.preferences.version=1
+hoverModifierMasks=org.eclipse.cdt.ui.BestMatchHover;0;org.eclipse.cdt.debug.internal.ui.editors.DebugTextHover;0;org.eclipse.cdt.ui.ProblemHover;0;org.eclipse.cdt.ui.CDocHover;0;org.eclipse.cdt.ui.CMacroExpansionHover;0;org.eclipse.cdt.ui.CSourceHover;131072;org.eclipse.cdt.ui.AnnotationHover;0;
+hoverModifiers=org.eclipse.cdt.ui.BestMatchHover;0;org.eclipse.cdt.debug.internal.ui.editors.DebugTextHover;\!0;org.eclipse.cdt.ui.ProblemHover;\!0;org.eclipse.cdt.ui.CDocHover;\!0;org.eclipse.cdt.ui.CMacroExpansionHover;\!0;org.eclipse.cdt.ui.CSourceHover;Shift;org.eclipse.cdt.ui.AnnotationHover;\!0;
+closeBraces=false
+closeStrings=false
