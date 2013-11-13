@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Mon Nov 11 16:26:44 2013
+// Created by SmartDesign Tue Nov 12 18:32:23 2013
 // Version: v11.0 11.0.0.23
 //////////////////////////////////////////////////////////////////////
 
@@ -11,7 +11,7 @@ module cont_servo_test_MSS(
     MSS_RESET_N,
     UART_0_RXD,
     // Outputs
-    GPIO_0_OUT,
+    M2F_GPO_0,
     UART_0_TXD,
     // Inouts
     I2C_1_SCL,
@@ -26,7 +26,7 @@ input  UART_0_RXD;
 //--------------------------------------------------------------------
 // Output
 //--------------------------------------------------------------------
-output GPIO_0_OUT;
+output M2F_GPO_0;
 output UART_0_TXD;
 //--------------------------------------------------------------------
 // Inout
@@ -36,7 +36,6 @@ inout  I2C_1_SDA;
 //--------------------------------------------------------------------
 // Nets
 //--------------------------------------------------------------------
-wire          GPIO_0_OUT_net_0;
 wire          I2C_1_SCL;
 wire          I2C_1_SDA;
 wire          MSS_ADLIB_INST_EMCCLK;
@@ -44,7 +43,6 @@ wire          MSS_ADLIB_INST_FCLK;
 wire          MSS_ADLIB_INST_MACCLK;
 wire          MSS_ADLIB_INST_MACCLKCCC;
 wire          MSS_ADLIB_INST_PLLLOCK;
-wire   [0:0]  MSS_GPIO_0_GPIO_0_OUT_D;
 wire          MSS_I2C_1_SCL_E;
 wire          MSS_I2C_1_SCL_Y;
 wire          MSS_I2C_1_SDA_E;
@@ -53,10 +51,12 @@ wire          MSS_RESET_0_MSS_RESET_N_Y;
 wire          MSS_RESET_N;
 wire          MSS_UART_0_RXD_Y;
 wire          MSS_UART_0_TXD_D;
+wire   [0:0]  MSSINT_GPO_0_A;
+wire          net_71;
 wire          UART_0_RXD;
 wire          UART_0_TXD_net_0;
+wire          net_71_net_0;
 wire          UART_0_TXD_net_1;
-wire          GPIO_0_OUT_net_1;
 wire   [31:0] GPO_net_0;
 //--------------------------------------------------------------------
 // TiedOff Nets
@@ -87,14 +87,14 @@ assign FABPWDATA_const_net_0 = 32'h00000000;
 //--------------------------------------------------------------------
 // Top level output port assignments
 //--------------------------------------------------------------------
+assign net_71_net_0     = net_71;
+assign M2F_GPO_0        = net_71_net_0;
 assign UART_0_TXD_net_1 = UART_0_TXD_net_0;
 assign UART_0_TXD       = UART_0_TXD_net_1;
-assign GPIO_0_OUT_net_1 = GPIO_0_OUT_net_0;
-assign GPIO_0_OUT       = GPIO_0_OUT_net_1;
 //--------------------------------------------------------------------
 // Slices assignments
 //--------------------------------------------------------------------
-assign MSS_GPIO_0_GPIO_0_OUT_D[0] = GPO_net_0[0:0];
+assign MSSINT_GPO_0_A[0] = GPO_net_0[0:0];
 //--------------------------------------------------------------------
 // Component instances
 //--------------------------------------------------------------------
@@ -358,17 +358,6 @@ cont_servo_test_MSS_tmp_MSS_CCC_0_MSS_CCC MSS_CCC_0(
         .MAC_CLK_IO     ( MSS_ADLIB_INST_MACCLK ) 
         );
 
-//--------OUTBUF_MSS
-OUTBUF_MSS #( 
-        .ACT_CONFIG ( 0 ),
-        .ACT_PIN    ( "V1" ) )
-MSS_GPIO_0_GPIO_0_OUT(
-        // Inputs
-        .D   ( MSS_GPIO_0_GPIO_0_OUT_D ),
-        // Outputs
-        .PAD ( GPIO_0_OUT_net_0 ) 
-        );
-
 //--------BIBUF_OPEND_MSS
 BIBUF_OPEND_MSS #( 
         .ACT_CONFIG ( 0 ),
@@ -426,6 +415,14 @@ MSS_UART_0_TXD(
         .D   ( MSS_UART_0_TXD_D ),
         // Outputs
         .PAD ( UART_0_TXD_net_0 ) 
+        );
+
+//--------MSSINT
+MSSINT MSSINT_GPO_0(
+        // Inputs
+        .A ( MSSINT_GPO_0_A ),
+        // Outputs
+        .Y ( net_71 ) 
         );
 
 

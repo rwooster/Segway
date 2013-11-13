@@ -12,7 +12,7 @@
     <project-description>
     </project-description>
     <location>C:/Users/rwooster/Documents/cont_servo_test/component/work/cont_servo_test</location>
-    <state>GENERATED ( Mon Nov 11 16:26:54 2013 )</state>
+    <state>GENERATED ( Tue Nov 12 18:33:06 2013 )</state>
     <swide-toolchain>SoftConsole workspace generated to C:\Users\rwooster\Documents\cont_servo_test\SoftConsole</swide-toolchain>
   </project-settings>
   <site-map>
@@ -29,12 +29,6 @@
     <name>Flash Memory File(s)</name>
     <file>C:\Users\rwooster\Documents\cont_servo_test\component\work\C:/Users/rwooster/Documents/cont_servo_test/component/work/cont_servo_test_MSS/MSS_ENVM_0/MSS_ENVM_0.efc</file>
   </fileset>
-  <io>
-    <port-name>I2C_1_SDA</port-name>
-    <direction>INOUT</direction>
-    <pin-number>-</pin-number>
-    <io-standard>LVTTL</io-standard>
-  </io>
   <io>
     <port-name>UART_0_RXD</port-name>
     <direction>IN</direction>
@@ -54,14 +48,20 @@
     <io-standard>LVTTL</io-standard>
   </io>
   <io>
-    <port-name>I2C_1_SCL</port-name>
+    <port-name>I2C_1_SDA</port-name>
     <direction>INOUT</direction>
     <pin-number>-</pin-number>
     <io-standard>LVTTL</io-standard>
   </io>
   <io>
-    <port-name>GPIO_0_OUT</port-name>
+    <port-name>M2F_GPO_0</port-name>
     <direction>OUT</direction>
+    <pin-number>-</pin-number>
+    <io-standard>LVTTL</io-standard>
+  </io>
+  <io>
+    <port-name>I2C_1_SCL</port-name>
+    <direction>INOUT</direction>
     <pin-number>-</pin-number>
     <io-standard>LVTTL</io-standard>
   </io>

@@ -18,7 +18,7 @@ Imported the files:
 
 C:\Users\rwooster\Documents\cont_servo_test\component\work\cont_servo_test\cont_servo_test.pdc
 
-The Import command succeeded ( 00:00:09 )
+The Import command succeeded ( 00:00:07 )
 =====================================================================
 Parameters used to run compile:
 ===============================
@@ -393,12 +393,12 @@ Netlist Optimization Report
 
 Optimized macros:
   - Dangling net drivers:   0
-  - Buffers:                0
+  - Buffers:                1
   - Inverters:              0
   - Tieoff:                 0
   - Logic combining:        0
 
-    Total macros optimized  0
+    Total macros optimized  1
 
 There were 0 error(s) and 332 warning(s) in this design.
 =====================================================================
@@ -421,10 +421,10 @@ Compile report:
 
     Microcontroller Subsystem  Used:      1  Total:      1   (100.00%)
     Fabric                     Used:      0  Total:   4608   (0.00%)
-    Fabric IO (W/ clocks)      Used:      0  Total:     94   (0.00%)
+    Fabric IO (W/ clocks)      Used:      1  Total:     94   (1.06%)
     Fabric Differential IO     Used:      0  Total:     47   (0.00%)
     Dedicated Analog IO        Used:      0  Total:     32   (0.00%)
-    Dedicated MSS IO           Used:      6  Total:     43   (13.95%)
+    Dedicated MSS IO           Used:      5  Total:     43   (11.63%)
     GLOBAL (Chip+Quadrant)     Used:      0  Total:     15   (0.00%)
     MSS GLOBAL                 Used:      3  Total:      3   (100.00%)
     On-chip RC oscillator      Used:      1  Total:      1   (100.00%)
@@ -457,7 +457,7 @@ I/O Function:
     Type                          | w/o register  | w/ register  | w/ DDR register
     ------------------------------|---------------|--------------|----------------
     Input I/O                     | 0             | 0            | 0
-    Output I/O                    | 0             | 0            | 0
+    Output I/O                    | 1             | 0            | 0
     Bidirectional I/O             | 0             | 0            | 0
     Differential Input I/O Pairs  | 0             | 0            | 0
     Differential Output I/O Pairs | 0             | 0            | 0
@@ -468,17 +468,36 @@ I/O Technology:
     --------------------------------|-------|-------|-------|--------|--------------
     I/O Standard(s)                 | Vcci  | Vref  | Input | Output | Bidirectional
     --------------------------------|-------|-------|-------|--------|--------------
+    LVTTL                           | 3.30v | N/A   | 0     | 1      | 0
+
+I/O Placement:
+
+    Locked  :   0
+    Placed  :   0
+    UnPlaced:   1 ( 100.00% )
 
 Net information report:
 =======================
 
-The Compile command succeeded ( 00:00:04 )
+High fanout nets in the post compile netlist:
+    Fanout  Type          Name
+    --------------------------
+    1       INT_NET       Net   : cont_servo_test_MSS_0/GPO_net_0[0]
+                          Driver: cont_servo_test_MSS_0/MSS_ADLIB_INST
+
+Nets that are candidates for clock assignment and the resulting fanout:
+    Fanout  Type          Name
+    --------------------------
+    1       INT_NET       Net   : cont_servo_test_MSS_0/GPO_net_0[0]
+                          Driver: cont_servo_test_MSS_0/MSS_ADLIB_INST
+
+The Compile command succeeded ( 00:00:03 )
 Wrote status report to file: cont_servo_test_compile_report.txt
 
 The Report command succeeded ( 00:00:00 )
 Design saved to file
 C:\Users\rwooster\Documents\cont_servo_test\designer\impl1\cont_servo_test.adb.
 
-The Execute Script command succeeded ( 00:00:16 )
+The Execute Script command succeeded ( 00:00:15 )
 Design closed.
 

@@ -4,7 +4,7 @@
   (keywordMap (keywordLevel 0))
   (status
     (written
-      (timeStamp 2013 11 11 16 27 0)
+      (timeStamp 2013 11 12 18 33 16)
       (author "Synopsys, Inc.")
       (program "Synplify Pro" (version "G-2012.09M-SP1 , mapper mapact, Build 904R"))
      )
@@ -356,6 +356,20 @@
         (property is_pwr (integer 1))
        )
     )
+    (cell OUTBUF (cellType GENERIC)
+      (property preferred (string "true"))
+      (property pad_cell (string "true"))
+      (property dont_touch (string "false"))
+       (view prim (viewType NETLIST)
+         (interface
+           (port PAD (direction OUTPUT)
+           (property function (string "D"))
+           (property is_pad (string "true"))
+ )
+           (port D (direction INPUT))
+         )
+       )
+    )
     (cell GND (cellType GENERIC)
       (property dont_touch (string "false"))
        (view prim (viewType NETLIST)
@@ -512,17 +526,28 @@
         (property orig_inst_of (string "cont_servo_test_MSS_tmp_MSS_CCC_0_MSS_CCC"))
        )
     )
+    (cell MSSINT (cellType GENERIC)
+       (view verilog (viewType NETLIST)
+         (interface
+           (port Y (direction OUTPUT))
+           (port A (direction INPUT))
+         )
+        (property orig_inst_of (string "MSSINT"))
+       )
+    )
     (cell cont_servo_test_MSS (cellType GENERIC)
        (view netlist (viewType NETLIST)
          (interface
-           (port GPIO_0_OUT (direction OUTPUT))
            (port I2C_1_SCL (direction INOUT))
            (port I2C_1_SDA (direction INOUT))
            (port MSS_RESET_N (direction INPUT))
            (port UART_0_RXD (direction INPUT))
            (port UART_0_TXD (direction OUTPUT))
+           (port M2F_GPO_0_c (direction OUTPUT))
          )
          (contents
+          (instance MSSINT_GPO_0 (viewRef verilog (cellRef MSSINT))
+          )
           (instance MSS_UART_0_TXD (viewRef prim (cellRef OUTBUF_MSS (libraryRef smartfusion)))
            (property is_instantiated (integer 1))
            (property ACT_CONFIG (integer 0))
@@ -548,11 +573,6 @@
            (property ACT_CONFIG (integer 0))
            (property ACT_PIN (string "U20"))
           )
-          (instance MSS_GPIO_0_GPIO_0_OUT (viewRef prim (cellRef OUTBUF_MSS (libraryRef smartfusion)))
-           (property is_instantiated (integer 1))
-           (property ACT_CONFIG (integer 0))
-           (property ACT_PIN (string "V1"))
-          )
           (instance MSS_ADLIB_INST (viewRef prim (cellRef MSS_APB (libraryRef smartfusion)))
            (property is_instantiated (integer 1))
            (property ACT_CONFIG (integer 0))
@@ -564,6 +584,14 @@
           )
           (instance VCC_i (viewRef prim (cellRef VCC (libraryRef smartfusion)))          )
           (instance GND_i (viewRef prim (cellRef GND (libraryRef smartfusion)))          )
+          (net M2F_GPO_0_c (joined
+           (portRef Y (instanceRef MSSINT_GPO_0))
+           (portRef M2F_GPO_0_c)
+          ))
+          (net (rename GPO_net_0_0 "GPO_net_0[0]") (joined
+           (portRef (member gpo 31) (instanceRef MSS_ADLIB_INST))
+           (portRef A (instanceRef MSSINT_GPO_0))
+          ))
           (net UART_0_TXD (joined
            (portRef PAD (instanceRef MSS_UART_0_TXD))
            (portRef UART_0_TXD)
@@ -611,14 +639,6 @@
           (net MSS_I2C_1_SCL_E (joined
            (portRef I2C1SCLO (instanceRef MSS_ADLIB_INST))
            (portRef E (instanceRef MSS_I2C_1_SCL))
-          ))
-          (net GPIO_0_OUT (joined
-           (portRef PAD (instanceRef MSS_GPIO_0_GPIO_0_OUT))
-           (portRef GPIO_0_OUT)
-          ))
-          (net (rename GPO_net_0_0 "GPO_net_0[0]") (joined
-           (portRef (member gpo 31) (instanceRef MSS_ADLIB_INST))
-           (portRef D (instanceRef MSS_GPIO_0_GPIO_0_OUT))
           ))
           (net MSS_ADLIB_INST_EMCRWn (joined
            (portRef EMCRWn (instanceRef MSS_ADLIB_INST))
@@ -1878,12 +1898,14 @@
          (interface
            (port MSS_RESET_N (direction INPUT))
            (port UART_0_RXD (direction INPUT))
-           (port GPIO_0_OUT (direction OUTPUT))
+           (port M2F_GPO_0 (direction OUTPUT))
            (port UART_0_TXD (direction OUTPUT))
            (port I2C_1_SCL (direction INOUT))
            (port I2C_1_SDA (direction INOUT))
          )
          (contents
+          (instance M2F_GPO_0_pad (viewRef prim (cellRef OUTBUF (libraryRef smartfusion)))
+          )
           (instance cont_servo_test_MSS_0 (viewRef netlist (cellRef cont_servo_test_MSS))
           )
           (instance VCC_i (viewRef prim (cellRef VCC (libraryRef smartfusion)))          )
@@ -1895,10 +1917,6 @@
           (net UART_0_RXD (joined
            (portRef UART_0_RXD)
            (portRef UART_0_RXD (instanceRef cont_servo_test_MSS_0))
-          ))
-          (net GPIO_0_OUT (joined
-           (portRef GPIO_0_OUT (instanceRef cont_servo_test_MSS_0))
-           (portRef GPIO_0_OUT)
           ))
           (net UART_0_TXD (joined
            (portRef UART_0_TXD (instanceRef cont_servo_test_MSS_0))
@@ -1917,6 +1935,14 @@
           ))
           (net GND (joined
            (portRef Y (instanceRef GND_i))
+          ))
+          (net M2F_GPO_0_c (joined
+           (portRef M2F_GPO_0_c (instanceRef cont_servo_test_MSS_0))
+           (portRef D (instanceRef M2F_GPO_0_pad))
+          ))
+          (net M2F_GPO_0 (joined
+           (portRef PAD (instanceRef M2F_GPO_0_pad))
+           (portRef M2F_GPO_0)
           ))
          )
         (property orig_inst_of (string "cont_servo_test"))

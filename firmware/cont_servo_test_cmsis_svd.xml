@@ -2,7 +2,7 @@
 <device>
   <name>cont_servo_test</name>
   <version>1.0</version>
-  <description>CMSIS description for cont_servo_test.  Created by Actel SmartDesign on Mon Nov 11 16:26:54 2013</description>
+  <description>CMSIS description for cont_servo_test.  Created by Actel SmartDesign on Tue Nov 12 18:33:05 2013</description>
   <addressUnitBits>8</addressUnitBits>
   <width>32</width>
   <peripherals>

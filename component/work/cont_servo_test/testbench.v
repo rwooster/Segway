@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by Actel SmartDesign Mon Nov 11 16:26:52 2013
+// Created by Actel SmartDesign Tue Nov 12 18:33:04 2013
 // Testbench Template
 // This is a basic testbench that instantiates your design with basic 
 // clock and reset pins connected.  If your design has special
@@ -49,7 +49,7 @@ cont_servo_test cont_servo_test_0 (
 
     // Outputs
     .UART_0_TXD( ),
-    .GPIO_0_OUT( ),
+    .M2F_GPO_0( ),
 
     // Inouts
     .I2C_1_SCL( ),

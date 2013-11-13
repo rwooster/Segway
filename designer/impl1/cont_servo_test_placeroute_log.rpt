@@ -33,25 +33,25 @@ Global net placement completed successfully.
 
                         o - o - o - o - o - o
 
-Timing-driven Placer Started: Mon Nov 11 16:27:24 2013
+Timing-driven Placer Started: Tue Nov 12 18:34:54 2013
 
-Placer Finished: Mon Nov 11 16:27:26 2013
-Total Placer CPU Time:     00:00:02
+Placer Finished: Tue Nov 12 18:34:55 2013
+Total Placer CPU Time:     00:00:01
 
                         o - o - o - o - o - o
 
 
 Timing-driven Router 
-Design: cont_servo_test                 Started: Mon Nov 11 16:27:29 2013
+Design: cont_servo_test                 Started: Tue Nov 12 18:34:58 2013
 
  
 
 Timing-driven Router completed successfully.
 
 Design: cont_servo_test                 
-Finished: Mon Nov 11 16:27:33 2013
-Total CPU Time:     00:00:04            Total Elapsed Time: 00:00:04
-Total Memory Usage: 144.7 Mbytes
+Finished: Tue Nov 12 18:35:03 2013
+Total CPU Time:     00:00:04            Total Elapsed Time: 00:00:05
+Total Memory Usage: 145.6 Mbytes
                         o - o - o - o - o - o
 
 Loading the Timing data for the design.

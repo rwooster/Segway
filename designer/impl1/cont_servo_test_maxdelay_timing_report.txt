@@ -3,7 +3,7 @@ Timing Report Max Delay Analysis
 SmartTime Version v11.0
 Microsemi Corporation - Actel Designer Software Release v11.0 (Version 11.0.0.23)
 Copyright (c) 1989-2013
-Date: Mon Nov 11 16:27:41 2013
+Date: Tue Nov 12 18:35:11 2013
 
 
 Design: cont_servo_test
@@ -51,8 +51,8 @@ Required Period (ns):       10.000
 Required Frequency (MHz):   100.000
 External Setup (ns):        N/A
 External Hold (ns):         N/A
-Min Clock-To-Out (ns):      6.394
-Max Clock-To-Out (ns):      10.784
+Min Clock-To-Out (ns):      7.677
+Max Clock-To-Out (ns):      12.888
 
 Clock Domain:               mss_ccc_gla0
 Period (ns):                10.000
@@ -203,19 +203,19 @@ SET Clock to Output
 
 Path 1
   From:                        cont_servo_test_MSS_0/MSS_ADLIB_INST/U_CORE:PCLK1
-  To:                          GPIO_0_OUT
-  Delay (ns):                  7.334
+  To:                          M2F_GPO_0
+  Delay (ns):                  9.438
   Slack (ns):
-  Arrival (ns):                10.784
+  Arrival (ns):                12.888
   Required (ns):
-  Clock to Out (ns):           10.784
+  Clock to Out (ns):           12.888
 
 
 Expanded Path 1
   From: cont_servo_test_MSS_0/MSS_ADLIB_INST/U_CORE:PCLK1
-  To: GPIO_0_OUT
+  To: M2F_GPO_0
   data required time                             N/C
-  data arrival time                          -   10.784
+  data arrival time                          -   12.888
   slack                                          N/C
   ________________________________________________________
   Data arrival time calculation
@@ -226,14 +226,22 @@ Expanded Path 1
   3.450
                +     3.458          cell: ADLIB:MSS_APB_IP
   6.908                        cont_servo_test_MSS_0/MSS_ADLIB_INST/U_CORE:GPO[0] (f)
-               +     0.538          net: cont_servo_test_MSS_0/GPO_net_0[0]
-  7.446                        cont_servo_test_MSS_0/MSS_GPIO_0_GPIO_0_OUT:D (f)
-               +     3.338          cell: ADLIB:IOPAD_TRI
-  10.784                       cont_servo_test_MSS_0/MSS_GPIO_0_GPIO_0_OUT:PAD (f)
-               +     0.000          net: GPIO_0_OUT
-  10.784                       GPIO_0_OUT (f)
+               +     0.000          net: cont_servo_test_MSS_0/MSS_ADLIB_INST/GPO[0]INT_NET
+  6.908                        cont_servo_test_MSS_0/MSS_ADLIB_INST/U_20:PIN1INT (f)
+               +     0.073          cell: ADLIB:MSS_IF
+  6.981                        cont_servo_test_MSS_0/MSS_ADLIB_INST/U_20:PIN1 (f)
+               +     2.698          net: cont_servo_test_MSS_0/GPO_net_0[0]
+  9.679                        M2F_GPO_0_pad/U0/U1:D (f)
+               +     0.500          cell: ADLIB:IOTRI_OB_EB
+  10.179                       M2F_GPO_0_pad/U0/U1:DOUT (f)
+               +     0.000          net: M2F_GPO_0_pad/U0/NET1
+  10.179                       M2F_GPO_0_pad/U0/U0:D (f)
+               +     2.709          cell: ADLIB:IOPAD_TRI
+  12.888                       M2F_GPO_0_pad/U0/U0:PAD (f)
+               +     0.000          net: M2F_GPO_0
+  12.888                       M2F_GPO_0 (f)
                                     
-  10.784                       data arrival time
+  12.888                       data arrival time
   ________________________________________________________
   Data required time calculation
   N/C                          mss_pclk1
@@ -242,7 +250,7 @@ Expanded Path 1
                +     3.450          Clock generation
   N/C
                                     
-  N/C                          GPIO_0_OUT (f)
+  N/C                          M2F_GPO_0 (f)
 
 
 END SET Clock to Output

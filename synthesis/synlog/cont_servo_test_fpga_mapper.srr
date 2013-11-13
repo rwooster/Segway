@@ -91,10 +91,11 @@ G-2012.09M-SP1
 
 Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 102MB)
 
+@W: MT246 :"c:\users\rwooster\documents\cont_servo_test\component\work\cont_servo_test_mss\cont_servo_test_mss.v":421:7:421:18|Blackbox MSSINT is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Mon Nov 11 16:27:00 2013
+# Timing Report written on Tue Nov 12 18:33:16 2013
 #
 
 
@@ -164,6 +165,7 @@ Instance                                    Reference     Type        Pin       
 ----------------------------------------------------------------------------------------------------------------------------
 cont_servo_test_MSS_0.MSS_CCC_0.I_RCOSC     System        RCOSC       CLKOUT     N_CLKA_RCOSC              0.000       5.312
 cont_servo_test_MSS_0.MSS_ADLIB_INST        System        MSS_APB     EMCCLK     MSS_ADLIB_INST_EMCCLK     0.000       9.726
+cont_servo_test_MSS_0.MSS_ADLIB_INST        System        MSS_APB     GPO[0]     GPO_net_0[0]              0.000       9.726
 ============================================================================================================================
 
 
@@ -175,6 +177,7 @@ Instance                                 Reference     Type        Pin          
                                          Clock                                                                               
 -----------------------------------------------------------------------------------------------------------------------------
 cont_servo_test_MSS_0.MSS_ADLIB_INST     System        MSS_APB     FCLK          MSS_ADLIB_INST_FCLK       10.000       5.312
+cont_servo_test_MSS_0.MSSINT_GPO_0       System        MSSINT      A             GPO_net_0[0]              10.000       9.726
 cont_servo_test_MSS_0.MSS_ADLIB_INST     System        MSS_APB     EMCCLKRTN     MSS_ADLIB_INST_EMCCLK     10.000       9.726
 =============================================================================================================================
 
@@ -225,6 +228,7 @@ Report for cell cont_servo_test.verilog
   Core Cell usage:
               cell count     area count*area
                GND     3      0.0        0.0
+            MSSINT     1      0.0        0.0
            MSS_APB     1      0.0        0.0
            MSS_CCC     1      0.0        0.0
              RCOSC     1      0.0        0.0
@@ -232,14 +236,15 @@ Report for cell cont_servo_test.verilog
 
 
                    -----          ----------
-             TOTAL     9                 0.0
+             TOTAL    10                 0.0
 
 
   IO Cell usage:
               cell count
    BIBUF_OPEND_MSS     2
          INBUF_MSS     2
-        OUTBUF_MSS     2
+            OUTBUF     1
+        OUTBUF_MSS     1
                    -----
              TOTAL     6
 
@@ -255,6 +260,6 @@ Mapper successful!
 At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 39MB peak: 102MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Mon Nov 11 16:27:00 2013
+# Tue Nov 12 18:33:16 2013
 
 ###########################################################]

@@ -1,7 +1,7 @@
 
 Starting:    C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\win64\mbin\synbatch.exe
 Install:     C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1
-Date:        Mon Nov 11 16:26:57 2013
+Date:        Tue Nov 12 18:33:14 2013
 Version:     G-2012.09M-SP1 
 
 Arguments:   -product synplify_pro  -licensetype synplifypro_actel -batch -log synplify.log cont_servo_test_syn.tcl
@@ -31,7 +31,7 @@ Copied C:\Users\rwooster\Documents\cont_servo_test\synthesis\synwork\cont_servo_
 
 compiler Completed with warnings
 Return Code: 1
-Run Time:0h:00m:02s
+Run Time:0h:00m:01s
 
 
 Job Compile Process completed on cont_servo_test_syn|synthesis
@@ -40,7 +40,7 @@ Running Premap on cont_servo_test_syn|synthesis
 
 premap Completed
 Return Code: 0
-Run Time:0h:00m:00s
+Run Time:0h:00m:01s
 
 
 Job Compile completed on cont_servo_test_syn|synthesis
@@ -51,7 +51,7 @@ Running Map & Optimize on cont_servo_test_syn|synthesis
 
 fpga_mapper Completed with warnings
 Return Code: 1
-Run Time:0h:00m:02s
+Run Time:0h:00m:01s
 
 
 Job Map completed on cont_servo_test_syn|synthesis

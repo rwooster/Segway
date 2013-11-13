@@ -1,7 +1,7 @@
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Mon Nov 11 16:27:00 2013
+# Timing Report written on Tue Nov 12 18:33:16 2013
 #
 
 
@@ -67,6 +67,7 @@ Instance                                    Reference     Type        Pin       
                                             Clock                                                                           
 ----------------------------------------------------------------------------------------------------------------------------
 cont_servo_test_MSS_0.MSS_ADLIB_INST        System        MSS_APB     EMCCLK     MSS_ADLIB_INST_EMCCLK     0.000       0.274
+cont_servo_test_MSS_0.MSS_ADLIB_INST        System        MSS_APB     GPO[0]     GPO_net_0[0]              0.000       0.274
 cont_servo_test_MSS_0.MSS_CCC_0.I_RCOSC     System        RCOSC       CLKOUT     N_CLKA_RCOSC              0.000       4.688
 ============================================================================================================================
 
@@ -78,6 +79,7 @@ Ending Points with Worst Slack
 Instance                                 Reference     Type        Pin           Net                       Time         Slack
                                          Clock                                                                               
 -----------------------------------------------------------------------------------------------------------------------------
+cont_servo_test_MSS_0.MSSINT_GPO_0       System        MSSINT      A             GPO_net_0[0]              0.000        0.192
 cont_servo_test_MSS_0.MSS_ADLIB_INST     System        MSS_APB     EMCCLKRTN     MSS_ADLIB_INST_EMCCLK     0.000        0.192
 cont_servo_test_MSS_0.MSS_ADLIB_INST     System        MSS_APB     FCLK          MSS_ADLIB_INST_FCLK       0.000        4.524
 =============================================================================================================================

@@ -11,11 +11,13 @@ Selecting top level module cont_servo_test
 
 @N: CG364 :"C:\Users\rwooster\Documents\cont_servo_test\component\work\cont_servo_test_MSS\MSS_CCC_0\cont_servo_test_MSS_tmp_MSS_CCC_0_MSS_CCC.v":5:7:5:47|Synthesizing module cont_servo_test_MSS_tmp_MSS_CCC_0_MSS_CCC
 
-@N: CG364 :"C:\Users\rwooster\Documents\cont_servo_test\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v":37:7:37:16|Synthesizing module OUTBUF_MSS
-
 @N: CG364 :"C:\Users\rwooster\Documents\cont_servo_test\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v":85:7:85:21|Synthesizing module BIBUF_OPEND_MSS
 
 @N: CG364 :"C:\Users\rwooster\Documents\cont_servo_test\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v":23:7:23:15|Synthesizing module INBUF_MSS
+
+@N: CG364 :"C:\Users\rwooster\Documents\cont_servo_test\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v":37:7:37:16|Synthesizing module OUTBUF_MSS
+
+@N: CG364 :"C:\Users\rwooster\Documents\cont_servo_test\component\Actel\SmartFusionMSS\MSS\2.5.106\mss_comps.v":145:7:145:12|Synthesizing module MSSINT
 
 @N: CG364 :"C:\Users\rwooster\Documents\cont_servo_test\component\work\cont_servo_test_MSS\cont_servo_test_MSS.v":9:7:9:25|Synthesizing module cont_servo_test_MSS
 
