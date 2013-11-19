@@ -6,7 +6,7 @@ Software Version: 11.0.0.23
 PDB file
 'C:\Users\rwooster\Documents\cont_servo_test\designer\impl1\cont_servo_test_fp\cont_servo_test.\
 pdb' has been loaded successfully.
-DESIGN : cont_servo_test;  CHECKSUM : BC2B;  PDB_VERSION : 1.8
+DESIGN : cont_servo_test;  CHECKSUM : 78D4;  PDB_VERSION : 1.8
 Driver : 3.0.0 build 1
 programmer '78516' : FlashPro3
 Opened
@@ -24,7 +24,7 @@ Info: Adding FPGA Array data from file
 PDB file
 'C:\Users\rwooster\Documents\cont_servo_test\designer\impl1\cont_servo_test_fp\cont_servo_test.\
 pdb' has been loaded successfully.
-DESIGN : cont_servo_test;  CHECKSUM : BC2B;  PDB_VERSION : 1.8
+DESIGN : cont_servo_test;  CHECKSUM : 78D4;  PDB_VERSION : 1.8
 The 'update_programming_file' command succeeded.
 The 'set_programming_action' command succeeded.
 programmer '78516' : Scan Chain...
@@ -35,13 +35,13 @@ programmer '78516' : Executing action PROGRAM
 programmer '78516' : EXPORT FSN[48] = 0114ab288c38
 programmer '78516' : Erase ...
 programmer '78516' : Completed erase
-programmer '78516' : EXPORT CHECKSUM: [16] = bc2b
+programmer '78516' : EXPORT CHECKSUM: [16] = 78d4
 programmer '78516' : Programming FPGA Array
 programmer '78516' : Verifying FPGA Array
 programmer '78516' :         Verifying FPGA Array -- pass
 programmer '78516' : Program System Init and Boot Clients...
 programmer '78516' : Verify System Init and Boot Clients...
-programmer '78516' : Finished: Tue Nov 12 18:37:10 2013 (Elapsed time 00:00:39)
+programmer '78516' : Finished: Mon Nov 18 19:33:43 2013 (Elapsed time 00:00:39)
 programmer '78516' : Executing action PROGRAM PASSED.
 
                         o - o - o - o - o - o

@@ -18,7 +18,7 @@ Imported the files:
 
 C:\Users\rwooster\Documents\cont_servo_test\component\work\cont_servo_test\cont_servo_test.pdc
 
-The Import command succeeded ( 00:00:07 )
+The Import command succeeded ( 00:00:08 )
 =====================================================================
 Parameters used to run compile:
 ===============================
@@ -35,7 +35,7 @@ Speed grade : -1
 Temp        : 0:25:85
 Voltage     : 1.58:1.50:1.42
 
-Keep Existing Physical Constraints : No
+Keep Existing Physical Constraints : Yes
 Keep Existing Timing Constraints   : Yes
 
 pdc_abort_on_error                 : Yes
@@ -208,7 +208,6 @@ Warning: CMP201: Net cont_servo_test_MSS_0/MSS_ADLIB_INST_GPOE[28] drives no loa
 Warning: CMP201: Net cont_servo_test_MSS_0/MSS_ADLIB_INST_GPOE[29] drives no load.
 Warning: CMP201: Net cont_servo_test_MSS_0/MSS_ADLIB_INST_GPOE[30] drives no load.
 Warning: CMP201: Net cont_servo_test_MSS_0/MSS_ADLIB_INST_GPOE[31] drives no load.
-Warning: CMP201: Net cont_servo_test_MSS_0/GPO_net_0[1] drives no load.
 Warning: CMP201: Net cont_servo_test_MSS_0/GPO_net_0[2] drives no load.
 Warning: CMP201: Net cont_servo_test_MSS_0/GPO_net_0[3] drives no load.
 Warning: CMP201: Net cont_servo_test_MSS_0/GPO_net_0[4] drives no load.
@@ -393,21 +392,14 @@ Netlist Optimization Report
 
 Optimized macros:
   - Dangling net drivers:   0
-  - Buffers:                1
+  - Buffers:                2
   - Inverters:              0
   - Tieoff:                 0
   - Logic combining:        0
 
-    Total macros optimized  1
+    Total macros optimized  2
 
-There were 0 error(s) and 332 warning(s) in this design.
-=====================================================================
-
-Reading user pdc (Physical Design Constraints) file(s) postcompile
-
-
-There were 0 error(s) and 0 warning(s) in reading the user pdc.
-
+There were 0 error(s) and 331 warning(s) in this design.
 =====================================================================
 
 Reading previous post-compile physical placement constraints.
@@ -416,12 +408,19 @@ Reading previous post-compile physical placement constraints.
 There were 0 error(s) and 0 warning(s).
 
 =====================================================================
+
+Reading user pdc (Physical Design Constraints) file(s) postcompile
+
+
+There were 0 error(s) and 0 warning(s) in reading the user pdc.
+
+=====================================================================
 Compile report:
 ===============
 
     Microcontroller Subsystem  Used:      1  Total:      1   (100.00%)
     Fabric                     Used:      0  Total:   4608   (0.00%)
-    Fabric IO (W/ clocks)      Used:      1  Total:     94   (1.06%)
+    Fabric IO (W/ clocks)      Used:      2  Total:     94   (2.13%)
     Fabric Differential IO     Used:      0  Total:     47   (0.00%)
     Dedicated Analog IO        Used:      0  Total:     32   (0.00%)
     Dedicated MSS IO           Used:      5  Total:     43   (11.63%)
@@ -457,7 +456,7 @@ I/O Function:
     Type                          | w/o register  | w/ register  | w/ DDR register
     ------------------------------|---------------|--------------|----------------
     Input I/O                     | 0             | 0            | 0
-    Output I/O                    | 1             | 0            | 0
+    Output I/O                    | 2             | 0            | 0
     Bidirectional I/O             | 0             | 0            | 0
     Differential Input I/O Pairs  | 0             | 0            | 0
     Differential Output I/O Pairs | 0             | 0            | 0
@@ -468,13 +467,15 @@ I/O Technology:
     --------------------------------|-------|-------|-------|--------|--------------
     I/O Standard(s)                 | Vcci  | Vref  | Input | Output | Bidirectional
     --------------------------------|-------|-------|-------|--------|--------------
-    LVTTL                           | 3.30v | N/A   | 0     | 1      | 0
+    LVTTL                           | 3.30v | N/A   | 0     | 2      | 0
 
 I/O Placement:
 
-    Locked  :   0
+    Locked  :   1 ( 50.00% )
     Placed  :   0
-    UnPlaced:   1 ( 100.00% )
+    UnPlaced:   1 ( 50.00% )
+
+Warning: Only some I/Os are locked
 
 Net information report:
 =======================
@@ -482,16 +483,20 @@ Net information report:
 High fanout nets in the post compile netlist:
     Fanout  Type          Name
     --------------------------
+    1       INT_NET       Net   : cont_servo_test_MSS_0/GPO_net_0[1]
+                          Driver: cont_servo_test_MSS_0/MSS_ADLIB_INST
     1       INT_NET       Net   : cont_servo_test_MSS_0/GPO_net_0[0]
                           Driver: cont_servo_test_MSS_0/MSS_ADLIB_INST
 
 Nets that are candidates for clock assignment and the resulting fanout:
     Fanout  Type          Name
     --------------------------
+    1       INT_NET       Net   : cont_servo_test_MSS_0/GPO_net_0[1]
+                          Driver: cont_servo_test_MSS_0/MSS_ADLIB_INST
     1       INT_NET       Net   : cont_servo_test_MSS_0/GPO_net_0[0]
                           Driver: cont_servo_test_MSS_0/MSS_ADLIB_INST
 
-The Compile command succeeded ( 00:00:03 )
+The Compile command succeeded ( 00:00:04 )
 Wrote status report to file: cont_servo_test_compile_report.txt
 
 The Report command succeeded ( 00:00:00 )

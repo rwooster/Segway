@@ -290,7 +290,7 @@ END GROUP
                 0x20010000                PROVIDE (_estack, __main_stack_start)
                 0x00000000                PROVIDE (__mirrored_nvm, 0x0)
 
-.text           0x20000000     0x2908
+.text           0x20000000     0x29a0
  CREATE_OBJECT_SYMBOLS
                 0x20000000                __text_load = LOADADDR (.text)
                 0x20000000                __text_start = .
@@ -490,116 +490,116 @@ END GROUP
  .text.Timer1_IRQHandler
                 0x20000878      0x240 ./main.o
                 0x20000878                Timer1_IRQHandler
- .text.main     0x20000ab8      0x138 ./main.o
+ .text.main     0x20000ab8      0x1d0 ./main.o
                 0x20000ab8                main
  .text.NVIC_ClearPendingIRQ
-                0x20000bf0       0x3c C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
+                0x20000c88       0x3c C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
  .text.MSS_UART_isr
-                0x20000c2c      0x11c C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
+                0x20000cc4      0x11c C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
  .text.UART0_IRQHandler
-                0x20000d48       0x2c C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
-                0x20000d48                UART0_IRQHandler
+                0x20000de0       0x2c C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
+                0x20000de0                UART0_IRQHandler
  .text.UART1_IRQHandler
-                0x20000d74       0x2c C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
-                0x20000d74                UART1_IRQHandler
+                0x20000e0c       0x2c C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
+                0x20000e0c                UART1_IRQHandler
  .text.NVIC_EnableIRQ
-                0x20000da0       0x38 C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+                0x20000e38       0x38 C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
  .text.NVIC_DisableIRQ
-                0x20000dd8       0x3c C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+                0x20000e70       0x3c C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
  .text.NVIC_ClearPendingIRQ
-                0x20000e14       0x3c C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+                0x20000eac       0x3c C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
  .text.MSS_I2C_init
-                0x20000e50      0x19c C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
-                0x20000e50                MSS_I2C_init
+                0x20000ee8      0x19c C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+                0x20000ee8                MSS_I2C_init
  .text.MSS_I2C_write
-                0x20000fec       0xc4 C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
-                0x20000fec                MSS_I2C_write
+                0x20001084       0xc4 C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+                0x20001084                MSS_I2C_write
  .text.MSS_I2C_read
-                0x200010b0       0xc8 C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
-                0x200010b0                MSS_I2C_read
+                0x20001148       0xc8 C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+                0x20001148                MSS_I2C_read
  .text.MSS_I2C_wait_complete
-                0x20001178       0x48 C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
-                0x20001178                MSS_I2C_wait_complete
+                0x20001210       0x48 C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+                0x20001210                MSS_I2C_wait_complete
  .text.mss_i2c_isr
-                0x200011c0      0x6f4 C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+                0x20001258      0x6f4 C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
  .text.disable_interrupts
-                0x200018b4       0x1c C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+                0x2000194c       0x1c C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
  .text.restore_interrupts
-                0x200018d0       0x18 C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+                0x20001968       0x18 C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
  .text.I2C0_IRQHandler
-                0x200018e8       0x2c C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
-                0x200018e8                I2C0_IRQHandler
+                0x20001980       0x2c C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+                0x20001980                I2C0_IRQHandler
  .text.I2C1_IRQHandler
-                0x20001914       0x2c C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
-                0x20001914                I2C1_IRQHandler
+                0x200019ac       0x2c C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+                0x200019ac                I2C1_IRQHandler
  .text.NVIC_ClearPendingIRQ
-                0x20001940       0x3c C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(mss_gpio.o)
+                0x200019d8       0x3c C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(mss_gpio.o)
  .text.MSS_GPIO_init
-                0x2000197c       0x6c C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(mss_gpio.o)
-                0x2000197c                MSS_GPIO_init
+                0x20001a14       0x6c C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(mss_gpio.o)
+                0x20001a14                MSS_GPIO_init
  .text.MSS_GPIO_config
-                0x200019e8       0x3c C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(mss_gpio.o)
-                0x200019e8                MSS_GPIO_config
+                0x20001a80       0x3c C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(mss_gpio.o)
+                0x20001a80                MSS_GPIO_config
  .text.MSS_GPIO_set_output
-                0x20001a24       0x40 C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(mss_gpio.o)
-                0x20001a24                MSS_GPIO_set_output
+                0x20001abc       0x40 C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(mss_gpio.o)
+                0x20001abc                MSS_GPIO_set_output
  .text.__get_PRIMASK
-                0x20001a64       0x20 C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
-                0x20001a64                __get_PRIMASK
+                0x20001afc       0x20 C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
+                0x20001afc                __get_PRIMASK
  .text.__set_PRIMASK
-                0x20001a84       0x18 C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
-                0x20001a84                __set_PRIMASK
+                0x20001b1c       0x18 C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
+                0x20001b1c                __set_PRIMASK
  .text.SystemInit
-                0x20001a9c        0xc C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
-                0x20001a9c                SystemInit
- .text          0x20001aa8      0x370 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_addsubdf3.o)
-                0x20001aa8                __aeabi_drsub
-                0x20001ab0                __aeabi_dsub
-                0x20001ab0                __subdf3
-                0x20001ab4                __aeabi_dadd
-                0x20001ab4                __adddf3
-                0x20001d2c                __floatunsidf
-                0x20001d2c                __aeabi_ui2d
-                0x20001d4c                __floatsidf
-                0x20001d4c                __aeabi_i2d
-                0x20001d70                __aeabi_f2d
-                0x20001d70                __extendsfdf2
-                0x20001dac                __floatundidf
-                0x20001dac                __aeabi_ul2d
-                0x20001dbc                __floatdidf
-                0x20001dbc                __aeabi_l2d
- .text          0x20001e18      0x424 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_muldivdf3.o)
-                0x20001e18                __aeabi_dmul
-                0x20001e18                __muldf3
-                0x2000206c                __divdf3
-                0x2000206c                __aeabi_ddiv
- .text          0x2000223c       0x40 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_fixunsdfsi.o)
-                0x2000223c                __aeabi_d2uiz
-                0x2000223c                __fixunsdfsi
- .text          0x2000227c       0xa0 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_truncdfsf2.o)
-                0x2000227c                __truncdfsf2
-                0x2000227c                __aeabi_d2f
- .text          0x2000231c      0x21c c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_addsubsf3.o)
-                0x2000231c                __aeabi_frsub
-                0x20002324                __subsf3
-                0x20002324                __aeabi_fsub
-                0x20002328                __aeabi_fadd
-                0x20002328                __addsf3
-                0x20002488                __aeabi_ui2f
-                0x20002488                __floatunsisf
-                0x20002490                __aeabi_i2f
-                0x20002490                __floatsisf
-                0x200024ac                __aeabi_ul2f
-                0x200024ac                __floatundisf
-                0x200024bc                __aeabi_l2f
-                0x200024bc                __floatdisf
- .text          0x20002538      0x2a0 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_muldivsf3.o)
-                0x20002538                __mulsf3
-                0x20002538                __aeabi_fmul
-                0x200026a0                __aeabi_fdiv
-                0x200026a0                __divsf3
- .text          0x200027d8       0x50 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-init.o)
-                0x200027d8                __libc_init_array
+                0x20001b34        0xc C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+                0x20001b34                SystemInit
+ .text          0x20001b40      0x370 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_addsubdf3.o)
+                0x20001b40                __aeabi_drsub
+                0x20001b48                __aeabi_dsub
+                0x20001b48                __subdf3
+                0x20001b4c                __aeabi_dadd
+                0x20001b4c                __adddf3
+                0x20001dc4                __floatunsidf
+                0x20001dc4                __aeabi_ui2d
+                0x20001de4                __floatsidf
+                0x20001de4                __aeabi_i2d
+                0x20001e08                __aeabi_f2d
+                0x20001e08                __extendsfdf2
+                0x20001e44                __floatundidf
+                0x20001e44                __aeabi_ul2d
+                0x20001e54                __floatdidf
+                0x20001e54                __aeabi_l2d
+ .text          0x20001eb0      0x424 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_muldivdf3.o)
+                0x20001eb0                __aeabi_dmul
+                0x20001eb0                __muldf3
+                0x20002104                __divdf3
+                0x20002104                __aeabi_ddiv
+ .text          0x200022d4       0x40 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_fixunsdfsi.o)
+                0x200022d4                __aeabi_d2uiz
+                0x200022d4                __fixunsdfsi
+ .text          0x20002314       0xa0 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_truncdfsf2.o)
+                0x20002314                __truncdfsf2
+                0x20002314                __aeabi_d2f
+ .text          0x200023b4      0x21c c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_addsubsf3.o)
+                0x200023b4                __aeabi_frsub
+                0x200023bc                __subsf3
+                0x200023bc                __aeabi_fsub
+                0x200023c0                __aeabi_fadd
+                0x200023c0                __addsf3
+                0x20002520                __aeabi_ui2f
+                0x20002520                __floatunsisf
+                0x20002528                __aeabi_i2f
+                0x20002528                __floatsisf
+                0x20002544                __aeabi_ul2f
+                0x20002544                __floatundisf
+                0x20002554                __aeabi_l2f
+                0x20002554                __floatdisf
+ .text          0x200025d0      0x2a0 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2\libgcc.a(_arm_muldivsf3.o)
+                0x200025d0                __mulsf3
+                0x200025d0                __aeabi_fmul
+                0x20002738                __aeabi_fdiv
+                0x20002738                __divsf3
+ .text          0x20002870       0x50 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-init.o)
+                0x20002870                __libc_init_array
  *(.plt)
  *(.gnu.warning)
  *(.glue_7t)
@@ -608,7 +608,7 @@ END GROUP
  .glue_7        0x00000000        0x0 linker stubs
  *(.vfp11_veneer)
  .vfp11_veneer  0x00000000        0x0 linker stubs
-                0x20002828                . = ALIGN (0x4)
+                0x200028c0                . = ALIGN (0x4)
  *crtbegin.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o) .ctors)
  *(SORT(.ctors.*))
@@ -619,102 +619,102 @@ END GROUP
  *crtend.o(.dtors)
  *(.rodata .rodata.* .gnu.linkonce.r.*)
  .rodata.g_config_reg_lut
-                0x20002828       0x80 C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(mss_gpio.o)
+                0x200028c0       0x80 C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(mss_gpio.o)
  .rodata.g_gpio_irqn_lut
-                0x200028a8       0x40 C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(mss_gpio.o)
+                0x20002940       0x40 C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(mss_gpio.o)
  *(.ARM.extab* .gnu.linkonce.armextab.*)
  *(.gcc_except_table)
  *(.eh_frame_hdr)
  *(.eh_frame)
  *(.init)
- .init          0x200028e8        0x4 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crti.o
-                0x200028e8                _init
- .init          0x200028ec        0x8 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtn.o
+ .init          0x20002980        0x4 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crti.o
+                0x20002980                _init
+ .init          0x20002984        0x8 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtn.o
  *(.fini)
- .fini          0x200028f4        0x4 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crti.o
-                0x200028f4                _fini
- .fini          0x200028f8        0x8 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtn.o
-                0x20002900                PROVIDE (__preinit_array_start, .)
+ .fini          0x2000298c        0x4 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crti.o
+                0x2000298c                _fini
+ .fini          0x20002990        0x8 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtn.o
+                0x20002998                PROVIDE (__preinit_array_start, .)
  *(.preinit_array)
-                0x20002900                PROVIDE (__preinit_array_end, .)
-                0x20002900                PROVIDE (__init_array_start, .)
+                0x20002998                PROVIDE (__preinit_array_end, .)
+                0x20002998                PROVIDE (__init_array_start, .)
  *(SORT(.init_array.*))
  *(.init_array)
- .init_array    0x20002900        0x4 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
-                0x20002904                PROVIDE (__init_array_end, .)
-                0x20002904                PROVIDE (__fini_array_start, .)
+ .init_array    0x20002998        0x4 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
+                0x2000299c                PROVIDE (__init_array_end, .)
+                0x2000299c                PROVIDE (__fini_array_start, .)
  *(.fini_array)
- .fini_array    0x20002904        0x4 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
+ .fini_array    0x2000299c        0x4 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
  *(SORT(.fini_array.*))
-                0x20002908                PROVIDE (__fini_array_end, .)
-                0x20002908                __exidx_start = .
+                0x200029a0                PROVIDE (__fini_array_end, .)
+                0x200029a0                __exidx_start = .
 
-.v4_bx          0x20002908        0x0
+.v4_bx          0x200029a0        0x0
  .v4_bx         0x00000000        0x0 linker stubs
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x20002908                __exidx_end = .
-                0x20002908                _etext = .
-                0x20002908                PROVIDE (__text_end, .)
+                0x200029a0                __exidx_end = .
+                0x200029a0                _etext = .
+                0x200029a0                PROVIDE (__text_end, .)
 
-.data           0x20002908        0x4
-                0x20002908                __data_load = LOADADDR (.data)
-                0x20002908                _sidata = LOADADDR (.data)
-                0x20002908                __data_start = .
-                0x20002908                _sdata = .
+.data           0x200029a0        0x4
+                0x200029a0                __data_load = LOADADDR (.data)
+                0x200029a0                _sidata = LOADADDR (.data)
+                0x200029a0                __data_start = .
+                0x200029a0                _sdata = .
  *(.jcr)
- .jcr           0x20002908        0x0 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
- .jcr           0x20002908        0x4 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtend.o
+ .jcr           0x200029a0        0x0 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
+ .jcr           0x200029a0        0x4 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtend.o
  *(.got.plt)
  *(.got)
  *(.shdata)
  *(.data .data.* .gnu.linkonce.d.*)
-                0x2000290c                . = ALIGN (0x4)
-                0x2000290c                _edata = .
+                0x200029a4                . = ALIGN (0x4)
+                0x200029a4                _edata = .
 
-.bss            0x2000290c      0x27c
-                0x2000290c                __bss_start__ = .
-                0x2000290c                _sbss = .
+.bss            0x200029a4      0x27c
+                0x200029a4                __bss_start__ = .
+                0x200029a4                _sbss = .
  *(.shbss)
  *(.bss .bss.* .gnu.linkonce.b.*)
- .bss           0x2000290c        0x1 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
- *fill*         0x2000290d        0x3 00
- .bss.angle     0x20002910        0x4 ./main.o
-                0x20002910                angle
+ .bss           0x200029a4        0x1 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/thumb2/crtbegin.o
+ *fill*         0x200029a5        0x3 00
+ .bss.angle     0x200029a8        0x4 ./main.o
+                0x200029a8                angle
  .bss.index_gyro.3881
-                0x20002914        0x4 ./main.o
+                0x200029ac        0x4 ./main.o
  .bss.gyro_avgs.3880
-                0x20002918       0xc8 ./main.o
+                0x200029b0       0xc8 ./main.o
  .bss.index_accl.3889
-                0x200029e0        0x4 ./main.o
+                0x20002a78        0x4 ./main.o
  .bss.accl_avgs.3888
-                0x200029e4       0xc8 ./main.o
+                0x20002a7c       0xc8 ./main.o
  *(COMMON)
- COMMON         0x20002aac        0x4 ./main.o
-                0x20002aac                Y_ACCL
-                0x20002aae                X_GYRO
- COMMON         0x20002ab0       0x50 C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
-                0x20002ab0                g_mss_uart1
-                0x20002ad8                g_mss_uart0
- COMMON         0x20002b00       0x88 C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
-                0x20002b00                g_mss_i2c0
-                0x20002b44                g_mss_i2c1
-                0x20002b88                . = ALIGN (0x8)
-                0x20002b88                __bss_end__ = .
-                0x20002b88                _end = .
-                0x20002b88                __end = _end
-                0x20002b88                _ebss = .
-                0x20002b88                PROVIDE (end, .)
+ COMMON         0x20002b44        0x4 ./main.o
+                0x20002b44                Y_ACCL
+                0x20002b46                X_GYRO
+ COMMON         0x20002b48       0x50 C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
+                0x20002b48                g_mss_uart1
+                0x20002b70                g_mss_uart0
+ COMMON         0x20002b98       0x88 C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+                0x20002b98                g_mss_i2c0
+                0x20002bdc                g_mss_i2c1
+                0x20002c20                . = ALIGN (0x8)
+                0x20002c20                __bss_end__ = .
+                0x20002c20                _end = .
+                0x20002c20                __end = _end
+                0x20002c20                _ebss = .
+                0x20002c20                PROVIDE (end, .)
 
-.stack          0x20002b88     0x3000
-                0x20002b88                . = ALIGN (0x4)
-                0x20003b88                . = (. + PROCESS_STACK_SIZE)
- *fill*         0x20002b88     0x1000 00
-                0x20003b88                . = ALIGN (0x4)
-                0x20005b88                . = (. + MAIN_STACK_SIZE)
- *fill*         0x20003b88     0x2000 00
-                0x20005b88                . = ALIGN (0x4)
+.stack          0x20002c20     0x3000
+                0x20002c20                . = ALIGN (0x4)
+                0x20003c20                . = (. + PROCESS_STACK_SIZE)
+ *fill*         0x20002c20     0x1000 00
+                0x20003c20                . = ALIGN (0x4)
+                0x20005c20                . = (. + MAIN_STACK_SIZE)
+ *fill*         0x20003c20     0x2000 00
+                0x20005c20                . = ALIGN (0x4)
 
 .stab
  *(.stab)
@@ -783,16 +783,16 @@ END GROUP
  .debug_pubnames
                 0x00000771       0xb4 C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
 
-.debug_info     0x00000000     0x7419
+.debug_info     0x00000000     0x7427
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x00000000      0xad9 ./imu.o
- .debug_info    0x00000ad9     0x14c7 ./main.o
- .debug_info    0x00001fa0     0x10f0 C:/Users/rwooster/Documents/cont_servo_test/SoftConsole/cont_servo_test_MSS_MSS_CM3_0/cont_servo_test_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
- .debug_info    0x00003090     0x15a4 C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
- .debug_info    0x00004634     0x1249 C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
- .debug_info    0x0000587d     0x1114 C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(mss_gpio.o)
- .debug_info    0x00006991      0x54c C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
- .debug_info    0x00006edd      0x53c C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+ .debug_info    0x00000ad9     0x14d5 ./main.o
+ .debug_info    0x00001fae     0x10f0 C:/Users/rwooster/Documents/cont_servo_test/SoftConsole/cont_servo_test_MSS_MSS_CM3_0/cont_servo_test_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_info    0x0000309e     0x15a4 C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
+ .debug_info    0x00004642     0x1249 C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+ .debug_info    0x0000588b     0x1114 C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(mss_gpio.o)
+ .debug_info    0x0000699f      0x54c C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
+ .debug_info    0x00006eeb      0x53c C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
 
 .debug_abbrev   0x00000000      0xd4e
  *(.debug_abbrev)
@@ -805,16 +805,16 @@ END GROUP
  .debug_abbrev  0x00000b64       0xd9 C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
  .debug_abbrev  0x00000c3d      0x111 C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
 
-.debug_line     0x00000000     0x2380
+.debug_line     0x00000000     0x238b
  *(.debug_line)
  .debug_line    0x00000000      0x2cb ./imu.o
- .debug_line    0x000002cb      0x972 ./main.o
- .debug_line    0x00000c3d      0x515 C:/Users/rwooster/Documents/cont_servo_test/SoftConsole/cont_servo_test_MSS_MSS_CM3_0/cont_servo_test_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
- .debug_line    0x00001152      0x581 C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
- .debug_line    0x000016d3      0x497 C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
- .debug_line    0x00001b6a      0x32f C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(mss_gpio.o)
- .debug_line    0x00001e99      0x263 C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
- .debug_line    0x000020fc      0x284 C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+ .debug_line    0x000002cb      0x97d ./main.o
+ .debug_line    0x00000c48      0x515 C:/Users/rwooster/Documents/cont_servo_test/SoftConsole/cont_servo_test_MSS_MSS_CM3_0/cont_servo_test_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_line    0x0000115d      0x581 C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
+ .debug_line    0x000016de      0x497 C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+ .debug_line    0x00001b75      0x32f C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(mss_gpio.o)
+ .debug_line    0x00001ea4      0x263 C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
+ .debug_line    0x00002107      0x284 C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
 
 .debug_frame    0x00000000      0xe3c
  *(.debug_frame)
@@ -829,23 +829,23 @@ END GROUP
  .debug_frame   0x00000df0       0x20 c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-errno.o)
  .debug_frame   0x00000e10       0x2c c:/actel/libero_v9.1/softconsole/sourcery-g++/bin/../lib/gcc/arm-none-eabi/4.4.1/../../../../arm-none-eabi/lib/thumb2\libc.a(lib_a-init.o)
 
-.debug_str      0x00000000     0x265e
+.debug_str      0x00000000     0x2674
  *(.debug_str)
  .debug_str     0x00000000      0xea5 ./imu.o
                                 0xf32 (size before relaxing)
- .debug_str     0x00000ea5      0x82e ./main.o
-                               0x170d (size before relaxing)
- .debug_str     0x000016d3      0x4a5 C:/Users/rwooster/Documents/cont_servo_test/SoftConsole/cont_servo_test_MSS_MSS_CM3_0/cont_servo_test_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
+ .debug_str     0x00000ea5      0x844 ./main.o
+                               0x1723 (size before relaxing)
+ .debug_str     0x000016e9      0x4a5 C:/Users/rwooster/Documents/cont_servo_test/SoftConsole/cont_servo_test_MSS_MSS_CM3_0/cont_servo_test_MSS_MSS_CM3_0_hw_platform/Debug/CMSIS/startup_gcc/newlib_stubs.o
                                0x10c6 (size before relaxing)
- .debug_str     0x00001b78      0x3a8 C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
+ .debug_str     0x00001b8e      0x3a8 C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(mss_uart.o)
                                0x14d7 (size before relaxing)
- .debug_str     0x00001f20      0x226 C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
+ .debug_str     0x00001f36      0x226 C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(mss_i2c.o)
                                0x141d (size before relaxing)
- .debug_str     0x00002146      0x2df C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(mss_gpio.o)
+ .debug_str     0x0000215c      0x2df C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(mss_gpio.o)
                                0x12af (size before relaxing)
- .debug_str     0x00002425      0x142 C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
+ .debug_str     0x0000243b      0x142 C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(core_cm3.o)
                                 0x28d (size before relaxing)
- .debug_str     0x00002567       0xf7 C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
+ .debug_str     0x0000257d       0xf7 C:\Users\rwooster\Documents\cont_servo_test\SoftConsole\cont_servo_test_MSS_MSS_CM3_0\cont_servo_test_MSS_MSS_CM3_0_hw_platform\Debug\libcont_servo_test_MSS_MSS_CM3_0_hw_platform.a(system_a2fxxxm3.o)
                                 0x47a (size before relaxing)
 
 .debug_loc      0x00000000     0x17e2

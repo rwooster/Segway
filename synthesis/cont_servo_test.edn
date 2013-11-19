@@ -4,7 +4,7 @@
   (keywordMap (keywordLevel 0))
   (status
     (written
-      (timeStamp 2013 11 12 18 33 16)
+      (timeStamp 2013 11 18 14 49 35)
       (author "Synopsys, Inc.")
       (program "Synplify Pro" (version "G-2012.09M-SP1 , mapper mapact, Build 904R"))
      )
@@ -544,8 +544,11 @@
            (port UART_0_RXD (direction INPUT))
            (port UART_0_TXD (direction OUTPUT))
            (port M2F_GPO_0_c (direction OUTPUT))
+           (port M2F_GPO_1_c (direction OUTPUT))
          )
          (contents
+          (instance MSSINT_GPO_1 (viewRef verilog (cellRef MSSINT))
+          )
           (instance MSSINT_GPO_0 (viewRef verilog (cellRef MSSINT))
           )
           (instance MSS_UART_0_TXD (viewRef prim (cellRef OUTBUF_MSS (libraryRef smartfusion)))
@@ -584,6 +587,14 @@
           )
           (instance VCC_i (viewRef prim (cellRef VCC (libraryRef smartfusion)))          )
           (instance GND_i (viewRef prim (cellRef GND (libraryRef smartfusion)))          )
+          (net M2F_GPO_1_c (joined
+           (portRef Y (instanceRef MSSINT_GPO_1))
+           (portRef M2F_GPO_1_c)
+          ))
+          (net (rename GPO_net_0_1 "GPO_net_0[1]") (joined
+           (portRef (member gpo 30) (instanceRef MSS_ADLIB_INST))
+           (portRef A (instanceRef MSSINT_GPO_1))
+          ))
           (net M2F_GPO_0_c (joined
            (portRef Y (instanceRef MSSINT_GPO_0))
            (portRef M2F_GPO_0_c)
@@ -1370,9 +1381,6 @@
           (net (rename MSS_ADLIB_INST_GPOE_31 "MSS_ADLIB_INST_GPOE[31]") (joined
            (portRef (member gpoe 0) (instanceRef MSS_ADLIB_INST))
           ))
-          (net (rename GPO_net_0_1 "GPO_net_0[1]") (joined
-           (portRef (member gpo 30) (instanceRef MSS_ADLIB_INST))
-          ))
           (net (rename GPO_net_0_2 "GPO_net_0[2]") (joined
            (portRef (member gpo 29) (instanceRef MSS_ADLIB_INST))
           ))
@@ -1899,11 +1907,14 @@
            (port MSS_RESET_N (direction INPUT))
            (port UART_0_RXD (direction INPUT))
            (port M2F_GPO_0 (direction OUTPUT))
+           (port M2F_GPO_1 (direction OUTPUT))
            (port UART_0_TXD (direction OUTPUT))
            (port I2C_1_SCL (direction INOUT))
            (port I2C_1_SDA (direction INOUT))
          )
          (contents
+          (instance M2F_GPO_1_pad (viewRef prim (cellRef OUTBUF (libraryRef smartfusion)))
+          )
           (instance M2F_GPO_0_pad (viewRef prim (cellRef OUTBUF (libraryRef smartfusion)))
           )
           (instance cont_servo_test_MSS_0 (viewRef netlist (cellRef cont_servo_test_MSS))
@@ -1943,6 +1954,14 @@
           (net M2F_GPO_0 (joined
            (portRef PAD (instanceRef M2F_GPO_0_pad))
            (portRef M2F_GPO_0)
+          ))
+          (net M2F_GPO_1_c (joined
+           (portRef M2F_GPO_1_c (instanceRef cont_servo_test_MSS_0))
+           (portRef D (instanceRef M2F_GPO_1_pad))
+          ))
+          (net M2F_GPO_1 (joined
+           (portRef PAD (instanceRef M2F_GPO_1_pad))
+           (portRef M2F_GPO_1)
           ))
          )
         (property orig_inst_of (string "cont_servo_test"))

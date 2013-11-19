@@ -3,7 +3,7 @@
 
 # Version: v11.0 11.0.0.23
 # Family: SmartFusion , Die: A2F200M3F , Package: 484 FBGA
-# Date generated: Tue Nov 12 18:33:04 2013 
+# Date generated: Mon Nov 18 14:49:15 2013 
 
 
 # 
@@ -65,8 +65,6 @@ set_io I2C_1_SDA            \
 # Old IO constraints, commented out for reference
 #
 
-# set_io I2C_1_SCL -GROUP_NAME I2C_1_PADs -DIRECTION INOUT 
-# set_io I2C_1_SDA -GROUP_NAME I2C_1_PADs -DIRECTION INOUT 
 # set_io I2C_1_SCL -GROUP_NAME I2C_1_PADs -DIRECTION INOUT 
 # set_io I2C_1_SDA -GROUP_NAME I2C_1_PADs -DIRECTION INOUT 
 # set_io I2C_1_SCL -GROUP_NAME I2C_1_PADs -DIRECTION INOUT 

@@ -3,7 +3,7 @@ Timing Report Min Delay Analysis
 SmartTime Version v11.0
 Microsemi Corporation - Actel Designer Software Release v11.0 (Version 11.0.0.23)
 Copyright (c) 1989-2013
-Date: Tue Nov 12 18:35:11 2013
+Date: Mon Nov 18 14:52:19 2013
 
 
 Design: cont_servo_test
@@ -51,7 +51,7 @@ Required Period (ns):       10.000
 Required Frequency (MHz):   100.000
 External Setup (ns):        N/A
 External Hold (ns):         N/A
-Min Clock-To-Out (ns):      7.677
+Min Clock-To-Out (ns):      7.510
 Max Clock-To-Out (ns):      12.888
 
 Clock Domain:               mss_ccc_gla0
@@ -203,6 +203,15 @@ SET Clock to Output
 
 Path 1
   From:                        cont_servo_test_MSS_0/MSS_ADLIB_INST/U_CORE:PCLK1
+  To:                          M2F_GPO_1
+  Delay (ns):                  4.954
+  Slack (ns):
+  Arrival (ns):                7.510
+  Required (ns):
+  Clock to Out (ns):           7.510
+
+Path 2
+  From:                        cont_servo_test_MSS_0/MSS_ADLIB_INST/U_CORE:PCLK1
   To:                          M2F_GPO_0
   Delay (ns):                  5.121
   Slack (ns):
@@ -213,8 +222,8 @@ Path 1
 
 Expanded Path 1
   From: cont_servo_test_MSS_0/MSS_ADLIB_INST/U_CORE:PCLK1
-  To: M2F_GPO_0
-  data arrival time                              7.677
+  To: M2F_GPO_1
+  data arrival time                              7.510
   data required time                         -   N/C
   slack                                          N/C
   ________________________________________________________
@@ -224,24 +233,24 @@ Expanded Path 1
   0.000                        cont_servo_test_MSS_0/MSS_ADLIB_INST/U_CORE:PCLK1 (r)
                +     2.556          Clock generation
   2.556
-               +     2.073          cell: ADLIB:MSS_APB_IP
-  4.629                        cont_servo_test_MSS_0/MSS_ADLIB_INST/U_CORE:GPO[0] (r)
-               +     0.000          net: cont_servo_test_MSS_0/MSS_ADLIB_INST/GPO[0]INT_NET
-  4.629                        cont_servo_test_MSS_0/MSS_ADLIB_INST/U_20:PIN1INT (r)
+               +     2.056          cell: ADLIB:MSS_APB_IP
+  4.612                        cont_servo_test_MSS_0/MSS_ADLIB_INST/U_CORE:GPO[1] (r)
+               +     0.000          net: cont_servo_test_MSS_0/MSS_ADLIB_INST/GPO[1]INT_NET
+  4.612                        cont_servo_test_MSS_0/MSS_ADLIB_INST/U_21:PIN1INT (r)
                +     0.041          cell: ADLIB:MSS_IF
-  4.670                        cont_servo_test_MSS_0/MSS_ADLIB_INST/U_20:PIN1 (r)
-               +     1.643          net: cont_servo_test_MSS_0/GPO_net_0[0]
-  6.313                        M2F_GPO_0_pad/U0/U1:D (r)
+  4.653                        cont_servo_test_MSS_0/MSS_ADLIB_INST/U_21:PIN1 (r)
+               +     1.493          net: cont_servo_test_MSS_0/GPO_net_0[1]
+  6.146                        M2F_GPO_1_pad/U0/U1:D (r)
                +     0.279          cell: ADLIB:IOTRI_OB_EB
-  6.592                        M2F_GPO_0_pad/U0/U1:DOUT (r)
-               +     0.000          net: M2F_GPO_0_pad/U0/NET1
-  6.592                        M2F_GPO_0_pad/U0/U0:D (r)
+  6.425                        M2F_GPO_1_pad/U0/U1:DOUT (r)
+               +     0.000          net: M2F_GPO_1_pad/U0/NET1
+  6.425                        M2F_GPO_1_pad/U0/U0:D (r)
                +     1.085          cell: ADLIB:IOPAD_TRI
-  7.677                        M2F_GPO_0_pad/U0/U0:PAD (r)
-               +     0.000          net: M2F_GPO_0
-  7.677                        M2F_GPO_0 (r)
+  7.510                        M2F_GPO_1_pad/U0/U0:PAD (r)
+               +     0.000          net: M2F_GPO_1
+  7.510                        M2F_GPO_1 (r)
                                     
-  7.677                        data arrival time
+  7.510                        data arrival time
   ________________________________________________________
   Data required time calculation
   N/C                          mss_pclk1
@@ -250,7 +259,7 @@ Expanded Path 1
                +     2.556          Clock generation
   N/C
                                     
-  N/C                          M2F_GPO_0 (r)
+  N/C                          M2F_GPO_1 (r)
 
 
 END SET Clock to Output

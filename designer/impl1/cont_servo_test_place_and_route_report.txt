@@ -1,13 +1,13 @@
 ***************************************************************************
                                Status Report
-                          Tue Nov 12 18:35:07 2013 ***************************************************************************
+                          Mon Nov 18 14:52:15 2013 ***************************************************************************
 
 Product: Designer
 Release: v11.0
 Version: 11.0.0.23
 File Name: C:\Users\rwooster\Documents\cont_servo_test\designer\impl1\cont_servo_test.adb
 Design Name: cont_servo_test  Design State: layout
-Last Saved: Tue Nov 12 18:34:43 2013
+Last Saved: Mon Nov 18 14:51:55 2013
 
 ***** Device Data **************************************************
 
@@ -22,7 +22,7 @@ Voltage Range:   COM
 
 ***** Import Variables *********************************************
 
-Source File(s) Imported on Tue Nov 12 18:33:20 2013:
+Source File(s) Imported on Mon Nov 18 14:49:41 2013:
         C:\Users\rwooster\Documents\cont_servo_test\synthesis\cont_servo_test.edn
         C:\Users\rwooster\Documents\cont_servo_test\component\work\cont_servo_test\cont_servo_test.pdc
 
@@ -59,7 +59,7 @@ Speed grade : -1
 Temp        : 0:25:85
 Voltage     : 1.58:1.50:1.42
 
-Keep Existing Physical Constraints : No
+Keep Existing Physical Constraints : Yes
 Keep Existing Timing Constraints   : Yes
 
 pdc_abort_on_error                 : Yes
@@ -232,7 +232,6 @@ Warning: CMP201: Net cont_servo_test_MSS_0/MSS_ADLIB_INST_GPOE[28] drives no loa
 Warning: CMP201: Net cont_servo_test_MSS_0/MSS_ADLIB_INST_GPOE[29] drives no load.
 Warning: CMP201: Net cont_servo_test_MSS_0/MSS_ADLIB_INST_GPOE[30] drives no load.
 Warning: CMP201: Net cont_servo_test_MSS_0/MSS_ADLIB_INST_GPOE[31] drives no load.
-Warning: CMP201: Net cont_servo_test_MSS_0/GPO_net_0[1] drives no load.
 Warning: CMP201: Net cont_servo_test_MSS_0/GPO_net_0[2] drives no load.
 Warning: CMP201: Net cont_servo_test_MSS_0/GPO_net_0[3] drives no load.
 Warning: CMP201: Net cont_servo_test_MSS_0/GPO_net_0[4] drives no load.
@@ -417,21 +416,14 @@ Netlist Optimization Report
 
 Optimized macros:
   - Dangling net drivers:   0
-  - Buffers:                1
+  - Buffers:                2
   - Inverters:              0
   - Tieoff:                 0
   - Logic combining:        0
 
-    Total macros optimized  1
+    Total macros optimized  2
 
-There were 0 error(s) and 332 warning(s) in this design.
-=====================================================================
-
-Reading user pdc (Physical Design Constraints) file(s) postcompile
-
-
-There were 0 error(s) and 0 warning(s) in reading the user pdc.
-
+There were 0 error(s) and 331 warning(s) in this design.
 =====================================================================
 
 Reading previous post-compile physical placement constraints.
@@ -440,12 +432,19 @@ Reading previous post-compile physical placement constraints.
 There were 0 error(s) and 0 warning(s).
 
 =====================================================================
+
+Reading user pdc (Physical Design Constraints) file(s) postcompile
+
+
+There were 0 error(s) and 0 warning(s) in reading the user pdc.
+
+=====================================================================
 Compile report:
 ===============
 
     Microcontroller Subsystem  Used:      1  Total:      1   (100.00%)
     Fabric                     Used:      0  Total:   4608   (0.00%)
-    Fabric IO (W/ clocks)      Used:      1  Total:     94   (1.06%)
+    Fabric IO (W/ clocks)      Used:      2  Total:     94   (2.13%)
     Fabric Differential IO     Used:      0  Total:     47   (0.00%)
     Dedicated Analog IO        Used:      0  Total:     32   (0.00%)
     Dedicated MSS IO           Used:      5  Total:     43   (11.63%)
@@ -481,7 +480,7 @@ I/O Function:
     Type                          | w/o register  | w/ register  | w/ DDR register
     ------------------------------|---------------|--------------|----------------
     Input I/O                     | 0             | 0            | 0
-    Output I/O                    | 1             | 0            | 0
+    Output I/O                    | 2             | 0            | 0
     Bidirectional I/O             | 0             | 0            | 0
     Differential Input I/O Pairs  | 0             | 0            | 0
     Differential Output I/O Pairs | 0             | 0            | 0
@@ -492,13 +491,15 @@ I/O Technology:
     --------------------------------|-------|-------|-------|--------|--------------
     I/O Standard(s)                 | Vcci  | Vref  | Input | Output | Bidirectional
     --------------------------------|-------|-------|-------|--------|--------------
-    LVTTL                           | 3.30v | N/A   | 0     | 1      | 0
+    LVTTL                           | 3.30v | N/A   | 0     | 2      | 0
 
 I/O Placement:
 
-    Locked  :   0
+    Locked  :   1 ( 50.00% )
     Placed  :   0
-    UnPlaced:   1 ( 100.00% )
+    UnPlaced:   1 ( 50.00% )
+
+Warning: Only some I/Os are locked
 
 Net information report:
 =======================
@@ -506,12 +507,16 @@ Net information report:
 High fanout nets in the post compile netlist:
     Fanout  Type          Name
     --------------------------
+    1       INT_NET       Net   : cont_servo_test_MSS_0/GPO_net_0[1]
+                          Driver: cont_servo_test_MSS_0/MSS_ADLIB_INST
     1       INT_NET       Net   : cont_servo_test_MSS_0/GPO_net_0[0]
                           Driver: cont_servo_test_MSS_0/MSS_ADLIB_INST
 
 Nets that are candidates for clock assignment and the resulting fanout:
     Fanout  Type          Name
     --------------------------
+    1       INT_NET       Net   : cont_servo_test_MSS_0/GPO_net_0[1]
+                          Driver: cont_servo_test_MSS_0/MSS_ADLIB_INST
     1       INT_NET       Net   : cont_servo_test_MSS_0/GPO_net_0[0]
                           Driver: cont_servo_test_MSS_0/MSS_ADLIB_INST
 
@@ -539,25 +544,25 @@ Global net placement completed successfully.
 
                         o - o - o - o - o - o
 
-Timing-driven Placer Started: Tue Nov 12 18:34:54 2013
+Timing-driven Placer Started: Mon Nov 18 14:52:01 2013
 
-Placer Finished: Tue Nov 12 18:34:55 2013
-Total Placer CPU Time:     00:00:01
+Placer Finished: Mon Nov 18 14:52:03 2013
+Total Placer CPU Time:     00:00:02
 
                         o - o - o - o - o - o
 
 
 Timing-driven Router 
-Design: cont_servo_test                 Started: Tue Nov 12 18:34:58 2013
+Design: cont_servo_test                 Started: Mon Nov 18 14:52:06 2013
 
  
 
 Timing-driven Router completed successfully.
 
 Design: cont_servo_test                 
-Finished: Tue Nov 12 18:35:03 2013
+Finished: Mon Nov 18 14:52:11 2013
 Total CPU Time:     00:00:04            Total Elapsed Time: 00:00:05
-Total Memory Usage: 145.6 Mbytes
+Total Memory Usage: 145.4 Mbytes
                         o - o - o - o - o - o
 
 

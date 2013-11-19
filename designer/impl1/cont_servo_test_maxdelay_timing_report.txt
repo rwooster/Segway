@@ -3,7 +3,7 @@ Timing Report Max Delay Analysis
 SmartTime Version v11.0
 Microsemi Corporation - Actel Designer Software Release v11.0 (Version 11.0.0.23)
 Copyright (c) 1989-2013
-Date: Tue Nov 12 18:35:11 2013
+Date: Mon Nov 18 14:52:19 2013
 
 
 Design: cont_servo_test
@@ -51,7 +51,7 @@ Required Period (ns):       10.000
 Required Frequency (MHz):   100.000
 External Setup (ns):        N/A
 External Hold (ns):         N/A
-Min Clock-To-Out (ns):      7.677
+Min Clock-To-Out (ns):      7.510
 Max Clock-To-Out (ns):      12.888
 
 Clock Domain:               mss_ccc_gla0
@@ -209,6 +209,15 @@ Path 1
   Arrival (ns):                12.888
   Required (ns):
   Clock to Out (ns):           12.888
+
+Path 2
+  From:                        cont_servo_test_MSS_0/MSS_ADLIB_INST/U_CORE:PCLK1
+  To:                          M2F_GPO_1
+  Delay (ns):                  9.225
+  Slack (ns):
+  Arrival (ns):                12.675
+  Required (ns):
+  Clock to Out (ns):           12.675
 
 
 Expanded Path 1

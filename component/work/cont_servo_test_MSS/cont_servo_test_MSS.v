@@ -1,5 +1,5 @@
 //////////////////////////////////////////////////////////////////////
-// Created by SmartDesign Tue Nov 12 18:32:23 2013
+// Created by SmartDesign Mon Nov 18 14:49:02 2013
 // Version: v11.0 11.0.0.23
 //////////////////////////////////////////////////////////////////////
 
@@ -12,6 +12,7 @@ module cont_servo_test_MSS(
     UART_0_RXD,
     // Outputs
     M2F_GPO_0,
+    M2F_GPO_1,
     UART_0_TXD,
     // Inouts
     I2C_1_SCL,
@@ -27,6 +28,7 @@ input  UART_0_RXD;
 // Output
 //--------------------------------------------------------------------
 output M2F_GPO_0;
+output M2F_GPO_1;
 output UART_0_TXD;
 //--------------------------------------------------------------------
 // Inout
@@ -52,10 +54,13 @@ wire          MSS_RESET_N;
 wire          MSS_UART_0_RXD_Y;
 wire          MSS_UART_0_TXD_D;
 wire   [0:0]  MSSINT_GPO_0_A;
+wire   [1:1]  MSSINT_GPO_1_A;
 wire          net_71;
+wire          net_72;
 wire          UART_0_RXD;
 wire          UART_0_TXD_net_0;
 wire          net_71_net_0;
+wire          net_72_net_0;
 wire          UART_0_TXD_net_1;
 wire   [31:0] GPO_net_0;
 //--------------------------------------------------------------------
@@ -89,12 +94,15 @@ assign FABPWDATA_const_net_0 = 32'h00000000;
 //--------------------------------------------------------------------
 assign net_71_net_0     = net_71;
 assign M2F_GPO_0        = net_71_net_0;
+assign net_72_net_0     = net_72;
+assign M2F_GPO_1        = net_72_net_0;
 assign UART_0_TXD_net_1 = UART_0_TXD_net_0;
 assign UART_0_TXD       = UART_0_TXD_net_1;
 //--------------------------------------------------------------------
 // Slices assignments
 //--------------------------------------------------------------------
 assign MSSINT_GPO_0_A[0] = GPO_net_0[0:0];
+assign MSSINT_GPO_1_A[1] = GPO_net_0[1:1];
 //--------------------------------------------------------------------
 // Component instances
 //--------------------------------------------------------------------
@@ -423,6 +431,14 @@ MSSINT MSSINT_GPO_0(
         .A ( MSSINT_GPO_0_A ),
         // Outputs
         .Y ( net_71 ) 
+        );
+
+//--------MSSINT
+MSSINT MSSINT_GPO_1(
+        // Inputs
+        .A ( MSSINT_GPO_1_A ),
+        // Outputs
+        .Y ( net_72 ) 
         );
 
 

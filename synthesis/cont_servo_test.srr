@@ -6,7 +6,7 @@
 #Implementation: synthesis
 
 $ Start of Compile
-#Tue Nov 12 18:33:14 2013
+#Mon Nov 18 14:49:32 2013
 
 Synopsys Verilog Compiler, version comp201209rcp1, Build 245R, built Feb 20 2013
 @N|Running in 64-bit mode
@@ -68,7 +68,7 @@ Selecting top level module cont_servo_test
 @W: CL159 :"C:\Users\rwooster\Documents\cont_servo_test\component\work\cont_servo_test_MSS\MSS_CCC_0\cont_servo_test_MSS_tmp_MSS_CCC_0_MSS_CCC.v":50:7:50:13|Input MAC_CLK is unused
 @END
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Tue Nov 12 18:33:14 2013
+# Mon Nov 18 14:49:32 2013
 
 ###########################################################]
 Premap Report
@@ -95,7 +95,7 @@ Pre-mapping successful!
 At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 39MB peak: 103MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Tue Nov 12 18:33:15 2013
+# Mon Nov 18 14:49:34 2013
 
 ###########################################################]
 Map & Optimize Report
@@ -193,11 +193,11 @@ G-2012.09M-SP1
 
 Finished Writing EDIF Netlist and constraint files (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 101MB peak: 102MB)
 
-@W: MT246 :"c:\users\rwooster\documents\cont_servo_test\component\work\cont_servo_test_mss\cont_servo_test_mss.v":421:7:421:18|Blackbox MSSINT is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
+@W: MT246 :"c:\users\rwooster\documents\cont_servo_test\component\work\cont_servo_test_mss\cont_servo_test_mss.v":437:7:437:18|Blackbox MSSINT is missing a user supplied timing model. This may have a negative effect on timing analysis and optimizations (Quality of Results) 
 
 
 ##### START OF TIMING REPORT #####[
-# Timing Report written on Tue Nov 12 18:33:16 2013
+# Timing Report written on Mon Nov 18 14:49:35 2013
 #
 
 
@@ -268,6 +268,7 @@ Instance                                    Reference     Type        Pin       
 cont_servo_test_MSS_0.MSS_CCC_0.I_RCOSC     System        RCOSC       CLKOUT     N_CLKA_RCOSC              0.000       5.312
 cont_servo_test_MSS_0.MSS_ADLIB_INST        System        MSS_APB     EMCCLK     MSS_ADLIB_INST_EMCCLK     0.000       9.726
 cont_servo_test_MSS_0.MSS_ADLIB_INST        System        MSS_APB     GPO[0]     GPO_net_0[0]              0.000       9.726
+cont_servo_test_MSS_0.MSS_ADLIB_INST        System        MSS_APB     GPO[1]     GPO_net_0[1]              0.000       9.726
 ============================================================================================================================
 
 
@@ -280,6 +281,7 @@ Instance                                 Reference     Type        Pin          
 -----------------------------------------------------------------------------------------------------------------------------
 cont_servo_test_MSS_0.MSS_ADLIB_INST     System        MSS_APB     FCLK          MSS_ADLIB_INST_FCLK       10.000       5.312
 cont_servo_test_MSS_0.MSSINT_GPO_0       System        MSSINT      A             GPO_net_0[0]              10.000       9.726
+cont_servo_test_MSS_0.MSSINT_GPO_1       System        MSSINT      A             GPO_net_0[1]              10.000       9.726
 cont_servo_test_MSS_0.MSS_ADLIB_INST     System        MSS_APB     EMCCLKRTN     MSS_ADLIB_INST_EMCCLK     10.000       9.726
 =============================================================================================================================
 
@@ -330,7 +332,7 @@ Report for cell cont_servo_test.verilog
   Core Cell usage:
               cell count     area count*area
                GND     3      0.0        0.0
-            MSSINT     1      0.0        0.0
+            MSSINT     2      0.0        0.0
            MSS_APB     1      0.0        0.0
            MSS_CCC     1      0.0        0.0
              RCOSC     1      0.0        0.0
@@ -338,21 +340,21 @@ Report for cell cont_servo_test.verilog
 
 
                    -----          ----------
-             TOTAL    10                 0.0
+             TOTAL    11                 0.0
 
 
   IO Cell usage:
               cell count
    BIBUF_OPEND_MSS     2
          INBUF_MSS     2
-            OUTBUF     1
+            OUTBUF     2
         OUTBUF_MSS     1
                    -----
-             TOTAL     6
+             TOTAL     7
 
 
 Core Cells         : 0 of 4608 (0%)
-IO Cells           : 6
+IO Cells           : 7
 
   RAM/ROM Usage Summary
 Block Rams : 0 of 8 (0%)
@@ -362,6 +364,6 @@ Mapper successful!
 At Mapper Exit (Real Time elapsed 0h:00m:00s; CPU Time elapsed 0h:00m:00s; Memory used current: 39MB peak: 102MB)
 
 Process took 0h:00m:01s realtime, 0h:00m:01s cputime
-# Tue Nov 12 18:33:16 2013
+# Mon Nov 18 14:49:35 2013
 
 ###########################################################]

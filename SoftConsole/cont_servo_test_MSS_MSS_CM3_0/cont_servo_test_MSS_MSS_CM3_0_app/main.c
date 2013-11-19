@@ -67,6 +67,7 @@ int main()
 
 	MSS_GPIO_init();
 	MSS_GPIO_config( MSS_GPIO_0, MSS_GPIO_OUTPUT_MODE);
+	MSS_GPIO_config( MSS_GPIO_1, MSS_GPIO_OUTPUT_MODE);
 
 
 	MSS_I2C_init(&g_mss_i2c1 , IMU_ADDRESS_WRITE, MSS_I2C_PCLK_DIV_256 );
@@ -113,17 +114,23 @@ int main()
 
 		//150000 = 1.5ms pulse
 		//1.49ms pulse = equilibrium point
-		uint32_t pulsewidth = 150000 + (angle/90.0)*100000 ;
+		uint32_t pulsewidth_right = 150000 + (angle/90.0)*100000;
+		uint32_t pulsewidth_left = 150000 - (angle/90.0)*100000;
 		uint32_t period = 2000000;
 		MSS_TIM2_load_immediate(period);
 	    MSS_TIM2_start();
 
 	    while (MSS_TIM2_get_current_value() > 0) {
 
-	    	if (MSS_TIM2_get_current_value() > (period - pulsewidth))
+	    	if (MSS_TIM2_get_current_value() > (period - pulsewidth_right))
 	    		MSS_GPIO_set_output( MSS_GPIO_0, 1);
 	    	else
 	    		MSS_GPIO_set_output( MSS_GPIO_0, 0);
+
+	    	if (MSS_TIM2_get_current_value() > (period - pulsewidth_left))
+                MSS_GPIO_set_output( MSS_GPIO_1, 1);
+            else
+                MSS_GPIO_set_output( MSS_GPIO_1, 0);
 	    }
 	}
 

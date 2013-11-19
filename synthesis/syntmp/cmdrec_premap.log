@@ -1,13 +1,13 @@
 C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\bin64\m_proasic.exe  -prodtype synplify_pro -encrypt  -pro  -rundir  C:\Users\rwooster\Documents\cont_servo_test\synthesis  -part A2F200M3F  -package FBGA484  -grade -1   -globalthreshold 50 -maxfan 24 -opcond COMWC     -report_path 0   -RWCheckOnRam 0     -summaryfile C:\Users\rwooster\Documents\cont_servo_test\synthesis\synlog\report\cont_servo_test_premap.xml -top_level_module  cont_servo_test  -oedif  C:\Users\rwooster\Documents\cont_servo_test\synthesis\cont_servo_test.edn  -conchk_prepass  C:\Users\rwooster\Documents\cont_servo_test\synthesis\cont_servo_test_cck_prepass.rpt  -freq 100.000  C:\Users\rwooster\Documents\cont_servo_test\synthesis\synwork\cont_servo_test_compiler.srs  -flow prepass  -gcc_prepass  -osrd  C:\Users\rwooster\Documents\cont_servo_test\synthesis\synwork\cont_servo_test_premap.srd  -qsap  C:\Users\rwooster\Documents\cont_servo_test\synthesis\cont_servo_test.sap  -devicelib  C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\lib\proasic\smartfusion.v  -ologparam  C:\Users\rwooster\Documents\cont_servo_test\synthesis\syntmp\cont_servo_test.plg  -osyn  C:\Users\rwooster\Documents\cont_servo_test\synthesis\synwork\cont_servo_test_premap.srd  -prjdir  C:\Users\rwooster\Documents\cont_servo_test\synthesis\  -prjname  cont_servo_test_syn  -log  C:\Users\rwooster\Documents\cont_servo_test\synthesis\synlog\cont_servo_test_premap.srr 
 rc:0 success:1
-C:\Users\rwooster\Documents\cont_servo_test\synthesis\cont_servo_test.edn|o|1384205220|99263
+C:\Users\rwooster\Documents\cont_servo_test\synthesis\cont_servo_test.edn|o|1384299196|100020
 C:\Users\rwooster\Documents\cont_servo_test\synthesis\cont_servo_test_cck_prepass.rpt|o|0|0
-C:\Users\rwooster\Documents\cont_servo_test\synthesis\synwork\cont_servo_test_compiler.srs|i|1384299194|32889
-C:\Users\rwooster\Documents\cont_servo_test\synthesis\synwork\cont_servo_test_premap.srd|o|1384299195|11773
-C:\Users\rwooster\Documents\cont_servo_test\synthesis\cont_servo_test.sap|o|1384299195|95
+C:\Users\rwooster\Documents\cont_servo_test\synthesis\synwork\cont_servo_test_compiler.srs|i|1384804172|33082
+C:\Users\rwooster\Documents\cont_servo_test\synthesis\synwork\cont_servo_test_premap.srd|o|1384804174|12909
+C:\Users\rwooster\Documents\cont_servo_test\synthesis\cont_servo_test.sap|o|1384804174|95
 C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\lib\proasic\smartfusion.v|i|1360942192|72817
-C:\Users\rwooster\Documents\cont_servo_test\synthesis\syntmp\cont_servo_test.plg|o|1384299195|0
-C:\Users\rwooster\Documents\cont_servo_test\synthesis\synwork\cont_servo_test_premap.srd|o|1384299195|11773
-C:\Users\rwooster\Documents\cont_servo_test\synthesis\synlog\cont_servo_test_premap.srr|o|1384299195|1536
+C:\Users\rwooster\Documents\cont_servo_test\synthesis\syntmp\cont_servo_test.plg|o|1384804174|0
+C:\Users\rwooster\Documents\cont_servo_test\synthesis\synwork\cont_servo_test_premap.srd|o|1384804174|12909
+C:\Users\rwooster\Documents\cont_servo_test\synthesis\synlog\cont_servo_test_premap.srr|o|1384804174|1536
 C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\bin64\m_proasic.exe|i|1360942034|13812224
 C:\Microsemi\Libero_v11.0\Synopsys\synplify_G201209MSP1\bin\m_proasic.exe|i|1360942022|11409920
